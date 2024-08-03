@@ -1,0 +1,251 @@
+%\iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}  
+\usepackage{tikz}
+\usepackage{circuitikz} 
+\usepackage{caption}
+
+\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                 
+\usepackage{color}                            
+\usepackage{array}                            
+\usepackage{longtable}                         
+\usepackage{calc}                            
+\usepackage{multirow}                      
+\usepackage{hhline}                           
+\usepackage{ifthen}                          
+\usepackage{lscape}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+
+\begin{document}
+%
+
+\bibliographystyle{IEEEtran}
+
+
+\vspace{3cm}
+
+\title{
+%	\logo{
+GATE 2022 EC\\
+\large{EE:1205 Signals and System}
+
+Indian Institute of Technology, Hyderabad
+%	}
+}
+\author{Prashant Maurya
+
+EE23BTECH11218
+}	
+%\title{
+%	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
+%}
+
+
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+%\title{Matrix Analysis through Octave}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+
+%\author{<-this % stops a space
+%\thanks{}}
+%}
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+
+
+% make the title area
+\maketitle
+
+\newpage
+
+%\tableofcontents
+
+\bigskip
+
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+%\renewcommand{\theequation}{\theenumi}
+
+%\begin{abstract}
+%%\boldmath
+%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
+%
+%\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+
+% Note that keywords are not normally used for peerreview papers.
+%\begin{IEEEkeywords}
+%Cooperative diversity, decode and forward, piecewise linear
+%\end{IEEEkeywords}
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+%\IEEEpeerreviewmaketitle	
+\textbf{Question 42:}
+ A circuit with an ideal OPAMP is shown. The Bode plot for the magnitude (in dB)
+ of the gain transfer function $ \brak{A \brak{j \omega}} = \dfrac{ V_{out}\brak{j \omega}}{V_{in}\brak{j \omega}}$ of the circuit is also
+provided (here, $\omega$ is the angular frequency in $ rad/s $). The values of $R$ and $C$ are 
+\begin{figure}[ht]
+	\centering
+    \includegraphics[width=\columnwidth]{figs/fig1.png}
+    \label{fig: 1}
+\end{figure}
+\begin{enumerate}[label = (\Alph*)]
+     \item $R$ = $3k\ohm$,  $C$ = $1\mu F$\\
+     \item $R$ = $1k\ohm$,  $C$ = $3\mu F$\\
+     \item $R$ = $4k\ohm$,  $C$ = $1\mu F$\\
+     \item $R$ = $3k\ohm$,  $C$ = $2\mu F$\\
+\end{enumerate}
+\textbf{Solution}
+
+\begin{table}[!h]
+	\centering
+	\input{tables/table1}
+	\vspace{6 pt}
+	\caption{Given Parameters}
+	\label{tab:enter-label}
+\end{table}
+
+\begin{figure}[ht]
+	\centering
+    \includegraphics[width=\columnwidth]{figs/fig2.png}
+    \caption{Active Low Pass Filter}
+    \label{fig: 1}
+\end{figure}
+\begin{align}
+\label{eqn:1}sR_1i_1\brak{s} +\dfrac{i_1\brak{s}}{C}=& V_{IN}\brak{s}s
+\end{align}
+\begin{align}
+\label{eqn:2}\dfrac{i_1\brak{s}}{C} - sRi_2\brak{s} =& sV_0\brak{s}
+\end{align}
+From \eqref{eqn:1} and \eqref{eqn:2},
+\begin{align}
+\label{eqn:3} \dfrac{sV_{IN}\brak{s}}{sR_1 C+1} - sRi_2\brak{s} =& sV_0\brak{s}
+\end{align}
+\begin{align}
+\label{eqn:4} -\dfrac{i_1\brak{s}}{C}=& sR_1i_2\brak{s}
+\end{align}
+From \eqref{eqn:1}, \eqref{eqn:2} and \eqref{eqn:4} ,
+\begin{align}
+-\dfrac{V_{IN}\brak{s}}{R_{1}^2Cs + R_1} =& \dfrac{V_{IN}\brak{s}}{RsR_1C + R} - \dfrac{V_0\brak{s}}{R}
+\end{align}
+\begin{figure}[ht]
+	\centering
+    \includegraphics[width=\columnwidth]{figs/fig5.png}
+    \caption{bode plot}
+    \label{fig: 2}
+\end{figure}
+\vspace{2cm}
+
+The 3-dB frequency from bode magnitude plot,
+\begin{align}
+\implies \omega_{3dB} =& 1000 \: rad/sec 
+\end{align}
+\begin{align}
+\omega_{3dB} =& \dfrac{1}{R_1 C}\\
+\implies C =& 1\mu F  
+\end{align}
+\begin{align}
+\implies A\brak{s} =& \dfrac{V_{OUT}\brak{s}}{V_{IN}\brak{s}}\\
+  		  =& \dfrac{1+10^{-3}R}{1+sC10^3}\\		
+  	   |A\brak{s}| =& \dfrac{1+10^{-3}R}{\sqrt{1+\omega^210^{-6}}}	\\
+\end{align}
+$A_V$ at low frequency,
+\begin{align}
+|A_V| =& 1+ 10^{-3}R \\
+1+ 10^{-3}R =& 10^{\dfrac{3}{5}}\\
+R =& 3k\ohm
+\end{align}
+Hence, The correct option is \brak{A}.
+\end{document}
