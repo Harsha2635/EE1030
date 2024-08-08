@@ -1,0 +1,115 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Chapter 12\\Differentiation}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section*{E : SUBJECTIVE PROBLEMS}
+\begin{enumerate}
+\item Let $f$ be a twice differentiable function such that 
+$f''(x)=-f(x)$, and $f'(x)=g(x) , h(x)=[f(x)]^2+[g(x)]^2$. Find $h(10)$ if $h(5)=11$ .\\
+\hfill{(1982-3 Marks)}
+\item If $\alpha$ be a repeated root of a quadratic equation $f(x)=0$ and $A(x),B(x)$ and $C(x)$ be polynomials of degree 3,4 and 5 respectively, then show that $\begin{vmatrix}
+A(x) & B(x) & C(x) \\
+A(\alpha) & B(\alpha) & C(\alpha) \\
+A'(\alpha) & B'(\alpha) & C'(\alpha) 
+\end{vmatrix}$ 
+is divisible by $f(x)$, where prime denotes the derivatives.\\
+\hfill{(1984-4 Marks)}
+\item If $x=\sec{\theta}-\cos{\theta}$ and $y=\sec^n{\theta}-\cos^n{\theta}$, then show that $ \brak{x^2 + 4} \brak{\frac{dy}{dx}}^2=n^2 \brak{y^2+4}$ \\
+\hfill{(1989-2 Marks)}
+\item Find $\frac{dy}{dx}$ at $x=-1$, when $(\sin{y})^{\sin(\frac{\pi}{2}x)} + \frac{\sqrt{3}}{2}\sec^{-1}{(2x)} + 2^x\tan{(\ln{(x+2)})} = 0 $\\
+\hfill{(1991- 4 Marks)}
+\item If $y = \frac{ax^2}{(x-a)(x-b)(x-c)}+\frac{bx}{(x-b)(x-c)}+1$, prove that $\frac{y'}{y}=\frac{1}{x}(\frac{a}{a-x}+\frac{b}{b-x}+\frac{c}{c-x})$\\
+\hfill{(1998- 8 Marks)}
+\end{enumerate}
+\section*{H : Assertion \& Reason Type Questions}
+\begin{enumerate}
+    \item Let $f(x)=2 + \cos{x}$ for all real x.\\
+    \textbf{STATEMENT - 1}:For each real $t$, there exists a point c in [t,t+$\pi$] such that $f'(c)=0$ because \\
+    \textbf{STATEMENT - 2}: $f(t)=f(t+2\pi)$ for each real t.\\
+    \hfill{(2007-3 Marks)}
+    \begin{enumerate}[label=(\alph*)]
+        \item Statement-1 is True, Statement-2 is True; Statement-2 is a correct explanation for Statement-1
+        \item Statement-1 is True, Statement-2 is True; Statement-2 is NOT a correct explanation for Statement-1
+        \item Statement-1 is True, Statement-2 is False 
+        \item Statement-1 is False, Statement-2 is True
+    \end{enumerate}
+\item Let $f$ and $g$ be real valued functions defined on interval (-1,1) such that $g''(x)$ is continuous, $g(0)\neq0$.$g'(0)=0, g''(0)\neq0$ , and $f(x)=g(x)\sin{x}$\\
+\textbf{STATEMENT-1}:\\
+$\lim _{x \to 0}[g(x)\cot{x}-g(0)\csc{x}]=f''(0)$ and\\
+\textbf{STATEMENT-2}: $f'(0)=g(0)$
+\hfill{(2008)}
+\begin{enumerate}[label=(\alph*)]
+        \item Statement-1 is True, Statement-2 is True; Statement-2 is a correct explanation for Statement-1
+        \item Statement-1 is True, Statement-2 is True; Statement-2 is \textbf{NOT} a correct explanation for Statement-1
+        \item Statement-1 is True, Statement-2 is False 
+        \item Statement-1 is False, Statement-2 is True
+    \end{enumerate}
+\end{enumerate}
+\section*{I:Integer Value Correct Type}
+\begin{enumerate}
+    \item If the function $f(x)=x^3+e^{\frac{x}{2}}$ and $g(x)=f^{-1}(x)$, then the value of $g'(1)$ is \\
+    \hfill{(2009)}\\
+    \item    Let $f(\theta)=\sin{\brak{\tan^{-1}{\brak{\frac{\sin{\theta}}{\sqrt{\cos{2\theta}}}}}}}$ , where $-\frac{\pi}{4}<\theta<\frac{\pi}{4}$. Then the value of $\frac{d}{d(\tan{\theta})}(f(\theta))$ is
+\end{enumerate}  
+\hfill{(2011)}
+
+
+\end{document}
