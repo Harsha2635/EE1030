@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.5)  20 AUG 2024 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.5)  20 AUG 2024 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
@@ -1135,11 +1136,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@tracingmulticols=\count344
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 
-143.
-
 \mult@box=\box85
 \multicol@leftmargin=\dimen333
 \c@unbalance=\count345
@@ -1214,7 +1210,8 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \c@rem=\count359
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 5
 1.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 No file assign2.aux.
@@ -1381,7 +1378,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
@@ -1397,31 +1394,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--196
  []
 
 
-Overfull \hbox (3.10367pt too wide) detected at line 218
-[]
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-
-Overfull \hbox (23.99403pt too wide) detected at line 297
-[]
- []
-
-[2]
-Overfull \hbox (10.45264pt too wide) detected at line 338
-[]
- []
-
-[3
-
-] (./assign2.aux)
+[2] [3] [4] (./assign2.aux)
 
 Package rerunfilecheck Warning: File `assign2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -1432,13 +1409,13 @@ Package rerunfilecheck Info: Checksums for `assign2.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30677 strings out of 476091
- 602567 string characters out of 5794082
- 1914330 words of memory out of 5000000
+ 30678 strings out of 476091
+ 602573 string characters out of 5794082
+ 1882330 words of memory out of 5000000
  50312 multiletter control sequences out of 15000+600000
  573282 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,17n,96p,1175b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,17n,96p,1175b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1448,10 +1425,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on assign2.pdf (3 pages, 66511 bytes).
+Output written on assign2.pdf (4 pages, 66545 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 90 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
