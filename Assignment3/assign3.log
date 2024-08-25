@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.5)  20 AUG 2024 13:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.5)  25 AUG 2024 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1376,7 +1376,7 @@ Package rerunfilecheck Info: Checksums for `assign3.out':
 Here is how much of TeX's memory you used:
  30618 strings out of 476091
  602057 string characters out of 5794082
- 1878330 words of memory out of 5000000
+ 1880330 words of memory out of 5000000
  50312 multiletter control sequences out of 15000+600000
  569240 words of font info for 145 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1388,7 +1388,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on assign3.pdf (2 pages, 49487 bytes).
+Output written on assign3.pdf (2 pages, 49501 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
