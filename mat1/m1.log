@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  1 SEP 2024 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  5 SEP 2024 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1903,8 +1903,11 @@ File: ts1txr.fd 2000/12/15 v3.1
 <figure_1.png, id=31, 552.0625pt x 571.13374pt>
 File: figure_1.png Graphic file (type png)
 <use figure_1.png>
-Package pdftex.def Info: figure_1.png  used on input line 99.
+Package pdftex.def Info: figure_1.png  used on input line 83.
 (pdftex.def)             Requested size: 254.9356pt x 263.74434pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}
@@ -1924,7 +1927,7 @@ Package rerunfilecheck Info: File `m1.out' has not changed.
 Here is how much of TeX's memory you used:
  52967 strings out of 474222
  1254800 string characters out of 5748733
- 1943975 words of memory out of 5000000
+ 1942975 words of memory out of 5000000
  74398 multiletter control sequences out of 15000+600000
  623283 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1935,7 +1938,7 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on m1.pdf (2 pages, 77504 bytes).
+Output written on m1.pdf (2 pages, 77122 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
