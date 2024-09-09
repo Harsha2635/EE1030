@@ -1,0 +1,97 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{1-1.2-24}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\textbf{Question}:\\
+A man goes 5 meters due west and then 12 meters due north. How far is he from the starting point?
+\\
+\solution
+\begin{table}[h!]    
+  \centering
+  \input{table.tex}
+  \caption{Variables Used}
+  \label{tab1-1.2-20}
+\end{table}
+\begin{align}
+x_1=\myvec{-5\\0} \\
+x_2=\myvec{0\\12}
+\end{align}
+Net displacement is given by,
+\begin{align}
+x=x_1 + x_2\\
+x=\myvec{-5\\0}-\myvec{0\\12}=\myvec{-5\\12}\\
+    x^T=\myvec{-5 & 12}
+\end{align}
+Therefore, the magnitude of x is given by,
+\begin{align}
+    ||x||=\sqrt{x^T * x}\\
+    ||x||=\sqrt{25+144}=\sqrt{169}=13 units
+\end{align}
+Therefore, the distance of man from starting point is 13 units.
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figure_1.png}
+   \label{stemplot}
+\end{figure}
+
+
+
+
+
+\end{document}
