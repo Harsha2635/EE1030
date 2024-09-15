@@ -24,7 +24,7 @@ int main(){
 		return 1;
 	}
 	mag = sqrt(C[0][0]*C[0][0]+C[1][0]*C[1][0]);
-	fprintf(file,"The distance of man from starting point is %f units",mag);
+	fprintf(file,"%f",mag);
 	fclose(file);
 	freeMat(A,2);
 	freeMat(B,2);
