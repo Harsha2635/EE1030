@@ -1,9 +1,3 @@
-# Program to plot an ellipse and shade the area bounded by the ellipse and the line
-# Code by GVV Sharma
-# August 8, 2020
-# Revised July 31, 2024
-# Revised August 16, 2024
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import fsolve
@@ -66,8 +60,8 @@ y_ellipse_shaded = np.sqrt(b**2 * (1 - (x_shaded - h)**2 / a**2)) + k  # Upper h
 y_line_shaded = slope * x_shaded + intercept
 
 # Plotting the ellipse and the line
-plt.plot(x_ellipse, y_ellipse, label='Ellipse')
-plt.plot(x_line, y_line, label='Line')
+plt.plot(x_ellipse, y_ellipse, label=r'Ellipse: $\frac{(x-%.2f)^2}{%.2f^2} + \frac{(y-%.2f)^2}{%.2f^2} = 1$' % (h, a, k, b))
+plt.plot(x_line, y_line, label=r'Line: $y = %.2f \cdot x + %.2f$' % (slope, intercept))
 
 # Fill the area between the ellipse and the line
 plt.fill_between(x_shaded, y_line_shaded, y_ellipse_shaded, where=(y_ellipse_shaded >= y_line_shaded),
