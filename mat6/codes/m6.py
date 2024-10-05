@@ -1,63 +1,71 @@
+# Code by GVV Sharma
+# Modified for Problem Solution
+# Released under GNU GPL
+# Calculating area enclosed between curves
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
 from scipy.optimize import fsolve
 
-# Define the equations of the parabola and the circle
+import sys  # For path to external scripts
+sys.path.insert(0, '/home/harsha/assignments/matgeo/codes/CoordGeo')  # Path to my scripts
 
-# Parabola: y^2 = 4x, or equivalently x = y^2 / 4
-def parabola(y):
-    return y**2 / 4
+# Read the values from the C-generated text file using numpy.loadtxt
+data = np.loadtxt('data.txt')
 
-# Circle: 4x^2 + 4y^2 = 9, or equivalently x^2 + y^2 = 9/4, so x = sqrt(9/4 - y^2)
-def circle(y):
-    return np.sqrt(9/4 - y**2)
+# Extracting parabola and circle parameters
+p = data[0]  # Parabola parameter (y^2 = 4px)
+r = data[1]  # Circle radius
+h = data[2]  # Circle center x-coordinate
+k = data[3]  # Circle center y-coordinate
 
-# Find the points of intersection
-def find_intersections():
-    # Solve for y where the parabola and circle intersect
-    def equations(y):
-        return circle(y) - parabola(y)
-    
-    # Use fsolve to find the y-values where the curves intersect
-    y1 = fsolve(equations, -1)[0]  # Initial guess around -1
-    y2 = fsolve(equations, 1)[0]   # Initial guess around 1
-    return y1, y2
+# Parabola equation: y^2 = 4px, so x = y^2 / (4p)
+def parabola(y, p):
+    return y**2 / (4 * p)
 
-y_int1, y_int2 = find_intersections()
+# Circle equation: (x - h)^2 + (y - k)^2 = r^2, so x = h + sqrt(r^2 - (y - k)^2)
+def circle(y, r, h, k):
+    return h + np.sqrt(r**2 - (y - k)**2)
+
+# Find the points of intersection between the parabola and the circle
+def find_intersections(p, r, h, k):
+    def intersection_eq(y):
+        return circle(y, r, h, k) - parabola(y, p)
+
+    y_int1 = fsolve(intersection_eq, -r)[0]
+    y_int2 = fsolve(intersection_eq, r)[0]
+
+    return y_int1, y_int2
+
+# Get the intersection points
+y_int1, y_int2 = find_intersections(p, r, h, k)
 
 # Compute the area between the curves using integration
-def area_between_curves(y):
-    return circle(y) - parabola(y)
+def area_between_curves(y, p, r, h, k):
+    return circle(y, r, h, k) - parabola(y, p)
 
 # Perform the integration from y_int1 to y_int2
-area, _ = quad(area_between_curves, y_int1, y_int2)
+area, _ = quad(area_between_curves, y_int1, y_int2, args=(p, r, h, k))
 
 print(f"Area enclosed between the parabola and the circle: {area}")
 
 # Visualization
 
 # Generating points for the parabola and circle
-y_vals = np.linspace(-np.sqrt(9/4), np.sqrt(9/4), 400)  # Extending y-range to cover the whole circle
-x_parabola = parabola(y_vals)
-x_circle_upper = circle(y_vals)
+y_vals = np.linspace(-r, r, 400)
+x_parabola = parabola(y_vals, p)
+x_circle_upper = circle(y_vals, r, h, k)
 
-# Generating the lower half of the circle
-x_circle_lower = -circle(y_vals)
+# Generate the lower half of the circle
+x_circle_lower = h - np.sqrt(r**2 - (y_vals - k)**2)
 
 # Plot the curves
 plt.plot(x_parabola, y_vals, label=r'Parabola: $y^2 = 4x$', color='r')
+plt.plot(x_circle_upper, y_vals, label=r'Circle: $(x - %.2f)^2 + (y - %.2f)^2 = %.2f^2$' % (h, k, r), color='b')
+plt.plot(x_circle_lower, y_vals, color='b')  # Lower part of the circle (no extra label)
 
-# Plot the complete circle (upper and lower parts combined) with a single label
-plt.plot(x_circle_upper, y_vals, label=r'Circle: $4x^2 + 4y^2 = 9$', color='b')
-plt.plot(x_circle_lower, y_vals, color='b')
-
-# Fill the area between the parabola and the upper half of the circle
+# Fill the area between the curves
 plt.fill_betweenx(y_vals, x_parabola, x_circle_upper, where=(x_circle_upper >= x_parabola), color='lightblue', alpha=0.5)
-
-# Adjusting the plot limits to show the complete graph
-plt.xlim(-1.5, 3)
-plt.ylim(-1.7, 1.7)
 
 # Labels and plot settings
 plt.xlabel('$x$')
@@ -66,9 +74,9 @@ plt.title('Area Enclosed by the Parabola and Circle')
 plt.grid(True)
 plt.legend()
 
-# Equal aspect ratio to prevent distortion
+# Set equal aspect ratio to avoid distortion
 plt.gca().set_aspect('equal', adjustable='box')
 
-# Show plot
+# Show the plot
 plt.show()
 

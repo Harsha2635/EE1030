@@ -1,40 +1,35 @@
 #include <stdio.h>
 
 int main() {
-    // Define parameters for the ellipse and line
-    double a = 5.0, b = 3.0;  // Semi-major and semi-minor axes of the ellipse
-    double h = 1.0, k = 2.0;  // Center of the ellipse
-    double V[2][2] = {{1.0, 0.0}, {0.0, 1.0}};  // Ellipse matrix (identity matrix for simplicity)
-    double slope = 0.5;  // Slope of the line
-    double intercept = 1.0;  // Y-intercept of the line
-    
-    // Create and open a .txt file for writing the data
+    // Define parabola and circle parameters
+    // Parabola y^2 = 4x is always of the form x = y^2 / (4 * p)
+    double p = 1.0; // Parabola parameter (y^2 = 4px)
+
+    // Circle (x - h)^2 + (y - k)^2 = r^2
+    double r = 1.5; // Radius of the circle
+    double h = 0.0; // Center of the circle (x-coordinate)
+    double k = 0.0; // Center of the circle (y-coordinate)
+
+    // Open the file to write the parameters
     FILE *file = fopen("data.txt", "w");
-    
-    // Write ellipse parameters and line parameters to the file
-    if (file != NULL) {
-        // Writing ellipse parameters a, b, h, k
-        fprintf(file, "%.2f\n", a);
-        fprintf(file, "%.2f\n", b);
-        fprintf(file, "%.2f\n", h);
-        fprintf(file, "%.2f\n", k);
-        
-        // Writing the ellipse matrix V
-        fprintf(file, "%.2f\n", V[0][0]);
-        fprintf(file, "%.2f\n", V[0][1]);
-        fprintf(file, "%.2f\n", V[1][0]);
-        fprintf(file, "%.2f\n", V[1][1]);
-        
-        // Writing the line parameters: slope and intercept
-        fprintf(file, "%.2f\n", slope);
-        fprintf(file, "%.2f\n", intercept);
-        
-        fclose(file);
-        printf("Data has been written to data.txt\n");
-    } else {
-        printf("Error opening the file!\n");
+    if (file == NULL) {
+        printf("Error opening file!\n");
+        return 1;
     }
-    
+
+    // Write the parabola parameter to the file
+    fprintf(file, "%f\n", p); // Parabola parameter (4p)
+
+    // Write the circle parameters to the file
+    fprintf(file, "%f\n", r); // Circle radius
+    fprintf(file, "%f\n", h); // Circle center x-coordinate
+    fprintf(file, "%f\n", k); // Circle center y-coordinate
+
+    // Close the file
+    fclose(file);
+
+    printf("Data written to data.txt\n");
+
     return 0;
 }
 
