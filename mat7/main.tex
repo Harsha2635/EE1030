@@ -1,0 +1,104 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{9-9.5-1}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\textbf{Question}:\\
+Find the area of the region 
+
+\[
+\{(x,y) : x^2 + y^2 \leq 16a^2 \text{ and } y^2 \leq 6ax\}
+\]
+\\
+\solution
+\begin{table}[h!]    
+  \centering
+  \input{tables/table.tex}
+  \caption{Variables Used}
+  \label{tab1-1.2-20}
+\end{table}
+The parameters of the conics are
+\begin{align}
+V_1=\myvec{0 & 0 \\ 0 & 1}\;,\;u_1=\myvec{3a\\0} \;,\;f_1=0\\
+V_2=\myvec{1 & 0 \\ 0 & 1}\;,\;u_2=\myvec{0\\0}\;,\;f_2=-16a^2
+\end{align}
+The intersection of two conics with parameters $V_i,u_i,f_i,\;i= 1,2$ is defined as
+\begin{align}
+x^T\brak{V_1+\mu V_2}x+2\brak{u_1+\mu u_2}^T x + \brak{f_1+\mu f_2}\;=\;0
+\end{align}
+Solving this the points of intersection are
+\begin{align}
+\myvec{2a\\\sqrt{12}a}\;,\;\myvec{2a\\-\sqrt{12}a}
+\end{align}
+Area between the curves is,
+\begin{align}
+\int_{0}^{2a} \brak{\sqrt{16a^2-x^2}-\sqrt{6ax}} \, dx \\
+=\brak{2\sqrt{3}-\frac{8\sqrt{6}}{3}+\frac{4\pi}{3}}
+\end{align}
+By solving the integration, we get area is equal to $1.10a^2$ sq.units
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=\linewidth]{figs/figure_1.png}
+   \label{stemplot}
+   \caption{}
+\end{figure}
+
+
+
+
+
+\end{document}
