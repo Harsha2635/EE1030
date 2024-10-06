@@ -1,0 +1,99 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{9-9.5-8}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\textbf{Question}:\\
+Prove that the curves $y^2=4x$ and $x^2=4y$ divide the area of the square bounded by sides $x=0\;,\;x=4\;,\;y=4,$ and $y=0$ into three equal parts.
+\\
+\solution
+\begin{table}[h!]    
+  \centering
+  \input{tables/table.tex}
+  \caption{Variables Used}
+  \label{tab1-1.2-20}
+\end{table}
+The parameters of the conics are
+\begin{align}
+V_1=\myvec{0 & 0 \\ 0 & 1}\;,\;u_1=\myvec{-2\\0} \;,\;f_1=0\\
+V_2=\myvec{1 & 0 \\ 0 & 0}\;,\;u_2=\myvec{0\\-\frac{1}{2}}\;,\;f_2=0
+\end{align}
+Area of square is 16 sq.units
+Intersection points are,
+\begin{align}
+\myvec{0\\0}\;,\;\myvec{4\\4}
+\end{align}
+Let, $A_1$=Area under $y^2=4x$ , $A_2$=Area under $x^2=4y$
+\begin{align}
+A_1\;=\;\int_{0}^{4} \brak{2\sqrt{x}} \, dx = \frac{32}{3}\\
+A_2\;=\;\int_{0}^{4} \brak{\frac{x^2}{4}} \, dx = \frac{16}{3}\\
+A_{overlap}=A_1-A_2=\frac{16}{3}
+\end{align}
+By removing overlapped portion from $A_1$ we get $\frac{16}{3}$\\
+Therefore, the curves $y^2=4x$ and $x^2=4y$ divides the area of square into 3 equal parts.
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=\linewidth]{figs/figure_1.png}
+   \label{stemplot}
+   \caption{}
+\end{figure}
+
+
+
+
+
+\end{document}

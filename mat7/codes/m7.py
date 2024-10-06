@@ -3,7 +3,7 @@
 # Released under GNU GPL
 # Calculating area enclosed between curves
 import sys  # For path to external scripts
-sys.path.insert(0, '/home/harsha/assignments/matgeo/codes/CoordGeo')  # Path to my scripts
+sys.path.insert(0, '/home/harsha/assignments/matgeo/codes/CoordGeo')  # Path to my scripts 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
