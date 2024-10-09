@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  9 OCT 2024 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  9 OCT 2024 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,14 +1358,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texm
-f-dist/fonts/enc/dvips/base/8r.enc}]
-Overfull \hbox (4.53195pt too wide) in paragraph at lines 167--169
-[]\OT1/txr/m/n/12 Let $\OML/txmi/m/it/12 P$ \OT1/txr/m/n/12 be the plane pass-i
-ng through the in-ter-sec-tion of the planes $[]\OML/txmi/m/it/12 : [] \OT1/txr
-/m/n/12 = 5$ and $[]\OML/txmi/m/it/12 : [] \OT1/txr/m/n/12 =
- []
-
-[2] [3] (./a3.aux)
+f-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] (./a3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1388,7 +1381,7 @@ onts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a3.pdf (3 pages, 59149 bytes).
+Output written on a3.pdf (3 pages, 59268 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
