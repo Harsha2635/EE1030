@@ -1,0 +1,91 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{31st January, 2024\\Shift-2}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+\maketitle
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+ \section*{Integer Type}
+\begin{enumerate}
+    \item Let $A$ be a $3 \times 3$ matrix and $\det\brak{A}=2$. If $n = \det(\underbrace{\text{adj}(\text{adj}(\dots(\text{adj}(A))\dots))}_{2024 \text{ times}})$, then the remainder when n is divided by 9 is equal to
+    \bigskip
+    \item Let $a,b,c$ be the length of three sides of a triangle satisfying the condition $\brak{a^2+b^2}x^2\;-\;2b\brak{a+c}x\;+\;\brak{b^2+c^2}=0$. If the set of all possible values of $x$ is the interval $\brak{\alpha,\beta}$, then $12\brak{{\alpha}^2+{\beta}^2}$ is equal to
+\bigskip
+    \item A line passes through $A\brak{4,-6,-2}$ and $B\brak{16,-2,4}$. The point $P\brak{a,b,c}$ where $a,b,c$ are non-negative integers, on the line $AB$ lies at a distance of 21 units, from the point $A$. The distance between the points $P\brak{a,b,c}$ and $Q\brak{4,-12,3}$ is equal to
+    \bigskip
+    \item Let $y=y\brak{x}$ be the solution of the differential equation $\sec^2{x}\;dx+\brak{e^{2y}\tan^2{x}+\tan{x}}dy=0\;,\;0<x<\frac{\pi}{2}\;,\;y\brak{\frac{\pi}{4}}=0$.If $y\brak{\frac{\pi}{6}}=\alpha$, then $e^{8\alpha}$ is equal to
+    \bigskip
+    \item $\left|\frac{120}{{\pi}^3}\int_{0}^{\pi} \frac{x^2\sin{x}\cos{x}}{\sin^{4}{x}+\cos^{4}{x}}\;dx\right|$ is equal to
+    \bigskip
+    \item Let $A=\{1,2,3,\cdots100\}$. Let R be a relation on A defined by $\brak{x,y}\in R$ if and only if $2x=3y$. Let $R_1$ be a symmetric relation on A such that $R\;\subset\;R_1$ and the number of elements in $R_1$ is n. Then, the minimum value of n is
+    \bigskip
+    \item Let the coefficient of $x^r$ in the expression of\\
+    $\brak{x+3}^{n-1}+\brak{x+3}^{n-2}\brak{x+2}+\brak{x+3}^{n-3}\brak{x+2}^2+\cdots +\brak{x+2}^{n-1}$ be $\alpha_i$.\\
+    If $\sum_{i=1}^{n} \alpha_r\;=\;{\beta}^n-{\gamma}^n,\beta,\gamma\in \mathbb{N}$, then the value of ${\beta}^2+{\gamma}^2$ equals
+    \bigskip
+    \item Let $\overset{\rightarrow}{a}=3\hat{i}+2\hat{j}+\hat{k}\;,\;\overset{\rightarrow}{b}=2\hat{i}-\hat{j}+3\hat{k}$ and $\overset{\rightarrow}{c}$ be a vector such that $\brak{\overset{\rightarrow}{a}+\overset{\rightarrow}{b}}\times \overset{\rightarrow}{c}=2\brak{\overset{\rightarrow}{a} \times \overset{\rightarrow}{b}}+24\hat{j}-6\hat{k}$ and $\brak{\overset{\rightarrow}{a}-\overset{\rightarrow}{b}+\hat{i}}\cdot \overset{\rightarrow}{c}=-3$. Then $|\overset{\rightarrow}{c}|^2$ is equal to
+    \bigskip
+    \item If $\lim \limits_{x\to 0} \frac{ax^2e^x-b\log_{e}{\brak{1+x}}+cxe^{-x}}{x^2\sin{x}}=1$, then $16\brak{a^2+b^2+c^2}$ is equal to
+    \bigskip
+    \item Let $A\brak{-2,-1},B\brak{1,0},C\brak{\alpha,\beta}\text{ and }D\brak{\gamma,\delta}$ be the vertices of a parallelogram $ABCD$. If the point C lies on $2x-y=5$ and the point $D$ lies on $3x-2y=6$, then the value of $|\alpha + \beta +\gamma +\delta|$ is equal to
+\end{enumerate}
+\end{document}
+
