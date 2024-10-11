@@ -1,0 +1,224 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{11th April, 2023\\Shift-1}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+\maketitle
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section*{Single correct}
+\begin{enumerate}
+    \item Let $x_1,x_2,\cdots ,x_{100}$ be in an arithmetic progression, with $x_1=2$ and their mean equal to 200. If $y_i=i\brak{x_i-i},1 \le i \le 100$, then the mean of $y_1,y_2,\cdots y_{100}$ is :
+    \begin{enumerate}
+    \begin{multicols}{4}
+    \item 10051.50
+    \item 10100
+    \item 10101.50
+    \item 10049.50
+    \end{multicols}
+        \end{enumerate}
+        \bigskip
+        \item The number of elements in the set $S=\{\theta \in \sbrak{0,2\pi}:3\cos^{4}{\theta}-5\cos^{2}{\theta}-2\sin^{6}{\theta}+2=0\}$ is:
+        \begin{enumerate}
+        \begin{multicols}{4}
+            \item 10
+            \item 9
+            \item 8
+            \item 12
+            \end{multicols}
+        \end{enumerate}
+        \bigskip
+\item The value of the integral $\int_{-\log_{e}{2}}^{\log_{e}{2}} e^x\brak{\log_{e}{\brak{e^x+\sqrt{1+e^{2x}}}}}  \, dx$ is equal to
+        \begin{enumerate}
+        \begin{multicols}{2}
+        \item $\log_{e}{\frac{\brak{2+\sqrt{5}}^2}{\sqrt{1+\sqrt{5}}}}+\frac{\sqrt{5}}{2}$
+          \item $\log_{e}{\frac{2\brak{2+\sqrt{5}}^2}{\sqrt{1+\sqrt{5}}}}-\frac{\sqrt{5}}{2}$ 
+          \item $\log_{e}{\frac{\sqrt{2}\brak{3-\sqrt{5}}^2}{\sqrt{1+\sqrt{5}}}}+\frac{\sqrt{5}}{2}$ 
+          \item $\log_{e}{\frac{\sqrt{2}\brak{2+\sqrt{5}}^2}{\sqrt{1+\sqrt{5}}}}-\frac{\sqrt{5}}{2}$
+        \end{multicols}
+        \end{enumerate}
+        \bigskip
+    \item Let $S=\{M=\sbrak{a_{ij}},a_{ij} \in \{0,1,2\},1 \le i,j \le 2\}$ be a sample space and $A=\{M \in S : M\text{ is invertible}\}$ be an event. Then $P\brak{A}$ is equal to:
+    \begin{enumerate}
+        \begin{multicols}{4}
+            \item $\frac{16}{27}$
+            \item $\frac{50}{81}$
+            \item $\frac{47}{81}$
+            \item $\frac{49}{81}$
+        \end{multicols}
+        \end{enumerate}
+\bigskip
+ 
+ \item Let $f\;:\;\sbrak{2,4} \rightarrow R$ be a differentiable function such that $\brak{x\log_{e}{x}}f'\brak{x}\;+\;\brak{\log_{e}{x}}f\brak{x}+f\brak{x}\; \ge \; 1, x\in \sbrak{2,4} $ with $f\brak{2}=\frac{1}{2}$ and $f\brak{4}=\frac{1}{4}$. Consider the following two statements: \\
+ \brak{A} : $f\brak{x}\le 1$, for all $x \in \sbrak{2,4}$ \\
+ \brak{B} : $f\brak{x}\ge \frac{1}{8}$, for all $x \in \sbrak{2,4}$\\
+ Then,
+ \begin{enumerate}
+     \item Only statement \brak{B} is true
+     \item Only statement \brak{A} is true 
+     \item Neither statement \brak{A} nor statement \brak{B} is true
+     \item Both the statements \brak{A} and \brak{B} are true 
+ \end{enumerate}
+ 
+ \bigskip
+ \item Let $A$ be a $2 \times 2$ matrix with real entries such that $A^{T}=\alpha A + I$, where $a \in R -\{-1,1\}$. If det $\brak{A^2-A}=4$, then the sum of all possible values of $\alpha$ is equal to: 
+ \begin{enumerate}
+     \begin{multicols}{4}
+         \item 0
+         \item $\frac{5}{2}$
+         \item 2
+         \item $\frac{3}{2}$
+     \end{multicols}
+ \end{enumerate}
+\bigskip
+ \item The number of integral solutions x of $\log_{\brak{x+\frac{7}{2}}}{\brak{\frac{x-7}{2x-1}}}^2$
+ \begin{enumerate}
+     \begin{multicols}{4}
+         \item 5
+         \item 7
+         \item 8
+         \item 6
+     \end{multicols}
+ \end{enumerate}
+ \bigskip
+ \item Let $\overset{\rightarrow}{a}=a_1\hat{i}+a_2\hat{j}+a_3\hat{k}$ and $0<|a_i|<1\;,\;i=\{1,2,3\}$\\
+\textbf{Statement-A} : $|a|\ge \text{max}\{|a_1|,|a_2|,|a_3|\}$ \\
+\textbf{Statement-B} : $|a|< \text{3max}\{|a_1|,|a_2|,|a_3|\}$
+\begin{enumerate}
+    \item Both A and B are true
+    \item Both A and B are false
+    \item A is true, B is false
+    \item A is false, B is true
+\end{enumerate}
+\bigskip
+ \item The number of triplets \brak{x,y,z}, where x,y,z are distinct non-negative integers satisying $x+y+z=15$, is :
+ \begin{enumerate}
+    \begin{multicols}{4}
+    \item 136
+    \item 114
+    \item 80
+    \item 92
+    \end{multicols}
+        \end{enumerate}
+\bigskip
+\item Let sets $A$ and $B$ have 5 elements each. Let mean of the elements in sets $A$ and $B$ be 5 and 8 respectively and the variance of the elements in sets $A$ and $B$ be 12 and 20 respectively. A new set $C$ of 10 elements is formed by subtracting 3 from each element of $A$ and adding 2 to each element of $B$. Then the sum of the mean and variance of the elements of $C$ is
+ \begin{enumerate}
+    \begin{multicols}{4}
+    \item 36
+    \item 40
+    \item 32
+    \item 38
+    \end{multicols}
+        \end{enumerate}
+\bigskip
+
+
+\item Area of the region $\{\brak{x,y}:x^2+\brak{y-2}^2 \le 4,x^2 \ge 2y\}$ is :
+\begin{enumerate}
+    \begin{multicols}{4}
+        \item $\pi+\frac{8}{3}$
+        \item $2\pi+\frac{16}{3}$
+        \item $2\pi-\frac{16}{3}$
+        \item $\pi-\frac{8}{3}$
+    \end{multicols}
+\end{enumerate}
+\bigskip
+\item Let $R$ be a rectangle given by the line $x=0,x=2,y=0 \text{ and } y=5$. Let $A\brak{\alpha,0}$ and $B\brak{0,\beta}$, $\alpha \in \sbrak{0,2}$ and $\beta \in \sbrak{0,5}$, be such that the line segment $AB$ divides the area of the rectangle $R$ in the ratio 4:1. Then, the mid-point of $AB$ lies on a :
+\begin{enumerate}
+    \begin{multicols}{4}
+        \item straight line
+        \item parabola
+        \item circle 
+        \item hyperbola
+    \end{multicols}
+\end{enumerate}
+\bigskip 
+\item Let $\overset{\rightarrow}{a}$ be a non-zero vector parallel to the line of intersection of the two planes described by $\hat{i}+\hat{j},\hat{i}+\hat{k}$ and $\hat{i}-\hat{j},\hat{j}-\hat{k}$. If $\theta$ is the angle between the vector $\overset{rightarrow}{a}$ and the vector $\overset{\rightarrow}{b}=2\hat{i}-2\hat{j}+\hat{k}$ and $\overset{\rightarrow}{a}\cdot\overset{\rightarrow}{b}=6$, then ordered pair $\brak{\theta,|\overset{\rightarrow}{a}\times\overset{\rightarrow}{b}|}$ is equal to:
+\begin{enumerate}
+    \begin{multicols}{4}
+    \item $\brak{\frac{\pi}{3},6}$
+    \item $\brak{\frac{\pi}{4},3\sqrt{6}}$
+    \item $\brak{\frac{\pi}{3},3\sqrt{6}}$
+        \item $\brak{\frac{\pi}{4},6}$
+    \end{multicols}
+\end{enumerate}
+\bigskip
+\item Let $w_1$ be the point obtained by the rotation of $z_1=5+4i$ about the origin through a right angle in the anti-clockwise direction, and $w_2$ be the point obtained by the rotation of $z_2=3+5i$ about the origin through a right angle in the clockwise direction, Then the principal argument of $w_1-w_2$ is equal to :
+\begin{enumerate}
+    \begin{multicols}{4}
+        \item $\pi-\tan^{-1}{\frac{8}{9}}$
+        \item $-\pi+\tan^{-1}{\frac{8}{9}}$
+        \item $\pi-\tan^{-1}{\frac{33}{5}}$
+        \item $-\pi+\tan^{-1}{\frac{33}{5}}$
+    \end{multicols}
+\end{enumerate}
+\bigskip
+\item Consider ellipse $E_{k}:kx^2\;+\;ky^2=1,k=1,2,\cdots,20$. Let $C_k$ be the circle which touches the four chords joining the end points(one on minor axis and another on major axis) of the ellipse $E_k$. If $r_k$ is the radius of the circle $C_k$ then the value of $\sum_{k=1}^{20} \frac{1}{{r_k}^2}$ is 
+\begin{enumerate}
+    \begin{multicols}{4}
+        \item 3320
+        \item 3210
+        \item 3080
+        \item 2870
+    \end{multicols}
+\end{enumerate}
+ \end{enumerate}
+
+\end{document}
+
