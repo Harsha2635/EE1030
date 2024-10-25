@@ -1,0 +1,39 @@
+\begin{figure}[H]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (7,10) to[short, -o] (7,9.25) node[right] {-10V};
+\draw (7.25,10.5) node[op amp,scale=1] (opamp2) {};
+\draw (opamp2.+) to[short] (5.75,10);
+\draw  (opamp2.-) to[short] (5.75,11);
+\draw (8.45,10.5) to[short](8.75,10.5);
+\draw (5,11) to[short] (6.25,11);
+\draw (5,10.5) to[short] (5,11);
+\draw (4.5,10.5) to[short] (5,10.5);
+\draw (4.5,10.5) to[R,l={\small $1k\Omega$}] (4.5,11.75);
+\draw (4.5,11.75) to[short, -o] (4.5,12.25) node[left] {+10V};
+\draw (5.75,8.25) to[short] (8,8.25);
+\draw (5.75,8.25) to[short] (5.75,10);
+\draw (8,9.25) to[short] (10,9.25);
+\draw (8,8.25) to[short] (8,9.25);
+\draw (8.5,10.5) to[R] (10,10.5);
+\draw (10,9.25) to[R,l={\small $100k\Omega$}] (10,8);
+\draw (10,8) to (10,7.75) node[ground]{};
+\draw (10,10.5) to[short, -o] (13,10.5) node[right] {$V_{OUT}$};
+\draw (10,10.5) to[R,l={\small $10k\Omega$}] (10,9.25);
+\draw (2.25,8.25) to[short] (2,8.25);
+\draw (12,9) to[empty Schottky diode,l={\small 5.0V}] (12,7.5);
+\draw (12,10.5) to[empty Schottky diode,l={\small 5.0V}] (12,9);
+\draw (12,7.5) to (12,7.25) node[ground]{};
+\draw (7,11) to[short, -o] (7,12) node[left] {+10V};
+\draw (4.5,10.5) to[C,l={\footnotesize $0.01\mu F$}] (4.5,9);
+\draw (4.5,9) to[short, -o] (4.5,7.25) node[right] {-10V};
+\draw (2.5,8.5) to[normal open switch,l={\small S}] (2.5,10.5);
+\draw (2.5,10.5) to[short] (4.5,10.5);
+\draw (2.5,8.5) to[short] (4.5,8.5);
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+

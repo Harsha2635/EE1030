@@ -37,7 +37,17 @@
 \usepackage{ifthen}                                           
 \usepackage{lscape}
 \usepackage{circuitikz}
+\begin{document}
 
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{AE - 2007}
+\author{AI24BTECH11015 - Harshvardhan Patidar}
+ \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
@@ -46,21 +56,6 @@
 
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
-\renewcommand{\thetable}{\theenumi}
-
-
-% Marks the beginning of the document
-\begin{document}
-\bibliographystyle{IEEEtran}
-\vspace{3cm}
-
-\title{GATE 2007 EE(18-34)}
-\author{EE24BTECH11030 - J.KEDARANANDA}
-% \maketitle
-% \newpage
-% \bigskip
-{\let\newpage\relax\maketitle}
-\renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 
 \section*{Q.1-Q.20 carry one mark each}
@@ -74,13 +69,12 @@
             \item or else if a gate pulse  to one of the SCRs is missed, it will subsequently cause a high load current in the other SCR
     \end{enumerate}
     \bigskip
-\item The electromagnetic torque $T_c$ of a drive, and its connected load torque $T_L$ are as shown in figure$\ref{fig:1}$. Out of the operating points A,B,C and D, the stable ones are
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=\linewidth]{figs/1.png}
-    \caption{}
-    \label{fig:1}
-    \end{figure}
+\item The electromagnetic torque $T_c$ of a drive, and its connected load torque $T_L$ are as shown below. Out of the operating points A,B,C and D, the stable ones are
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig_1.png}
+   \label{stemplot}
+\end{figure}
 \begin{enumerate}
     \begin{multicols}{4}
         \item A,C,D
@@ -99,15 +93,14 @@
 \section*{Q.21 to Q.75 carry two marks each.}
 \end{enumerate}
 \bigskip
-\item The input signal $V_{in}$ shown in the figure$\ref{fig:2}$ is a 1kHz square wave voltage that alternates between +7V and -7V with a 50\% duty cycle. Both transistors have the same current gain, which is large. The circuit delivers power to the load resistor $R_L$. What is the efficiency of this circuit for the given input? Choose the closest answer
+\item The input signal $V_{in}$ shown in the figure is a 1kHz square wave voltage that alternates between +7V and -7V with a 50\% duty cycle. Both transistors have the same current gain, which is large. The circuit delivers power to the load resistor $R_L$. What is the efficiency of this circuit for the given input? Choose the closest answer
 
-\begin{figure}[!ht]
-    
-			\centering
-			\input{figs/2.tex}
-			\caption{}
-			\label{fig:2}
-		\end{figure}
+\begin{figure}[H]
+   \centering
+   \input{figs/2.tex}
+   \caption{}
+   \label{25}
+\end{figure}
 
 \begin{enumerate}
     \begin{multicols}{4}
@@ -118,17 +111,13 @@
     \end{multicols}
 \end{enumerate}
 \bigskip
-\item A,B,C and D are input bits, and Y is the output bit in the XOR gate circuit of the figure $\ref{fig:3}$. Which of the following statements about the sum S of A,B,C,D and Y is correct?
-\begin{figure}[!ht]
-    
-			\centering
-			\input{figs/3.tex}
-			\caption{}
-			\label{fig:3}
-		\end{figure}
-
+\item A,B,C and D are input bits, and Y is the output bit in the XOR gate circuit of the figure below. Which of the following statements about the sum S of A,B,C,D and Y is correct?
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig_3.png}
+   \label{stemplot}
+\end{figure}
 \begin{enumerate}
-
         \item S is always either zero or odd
         \item S is always either zero or even
         \item S = 1 only if the sum of A,B,C and D is even 
@@ -146,15 +135,12 @@
     \end{multicols}
 \end{enumerate}
 \bigskip
-\item The switch S in the circuit of the figure$\ref{fig:4}$ is initially closed. It is opened at time t=0. You may neglect the Zener diode forward voltage drops. What is the behaviour of $V_{OUT}$ for $t>0$? 
-\begin{figure}[!ht]
-    
-			\centering
-			\input{figs/4.tex}
-			\caption{}
-			\label{fig:4}
-		\end{figure}
-
+\item The switch S in the circuit of the figure is initially closed. It is opened at time t=0. You may neglect the Zener diode forward voltage drops. What is the behaviour of $V_{OUT}$ for $t>0$? 
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig_4.png}
+   \label{stemplot}
+\end{figure}
 \begin{enumerate}
     \item It makes a transition from -5V to +5V at $t=12.98\mu s$
     \item It makes a transition from -5V to +5V at $t=2.57\mu s$
@@ -173,13 +159,12 @@
     \end{multicols}
 \end{enumerate}
 \bigskip
-\item The figure below$\ref{fig:5}$ shows a three phase self-commutated voltage source converter connected to a power system. The converter's dc bus capacitor is marked as C in the figure. The converter's dc bus capacitor is marked as C in the figure. The circuit is initially operating in steady state with $\delta=0$ and the capacitor dc voltage is equal to $V_{dc0}$. You may neglect all losses and harmonics. What action should be taken to increase the capacitor dc voltage slowly to a new steady state value?
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=\linewidth]{figs/5.png}
-    \caption{}
-    \label{fig:5}
-    \end{figure}
+\item The figure below shows a three phase self-commutated voltage source converter connected to a power system. The converter's dc bus capacitor is marked as C in the figure. The converter's dc bus capacitor is marked as C in the figure. The circuit is initially operating in steady state with $\delta=0$ and the capacitor dc voltage is equal to $V_{dc0}$. You may neglect all losses and harmonics. What action should be taken to increase the capacitor dc voltage slowly to a new steady state value?
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig_5.png}
+   \label{stemplot}
+\end{figure}
 \begin{enumerate}
         \item Make $\delta$ positive and maintain it at a positive value
         \item Make $\delta$ positive and return it to its original value
@@ -197,13 +182,12 @@
     \end{multicols}
 \end{enumerate}
 \bigskip
-\item Consider the protection system shown in the figure below$\ref{fig:6}$. The circuit breakers, numbered from 1 to 7 are of identical type. A single line to ground fault with zero fault impedance occurs at the midpoint of the line (at point F), but circuit breaker 4 fails to operate ("stuck breaker"). If the relays are coordinated correctly, a valid sequence of circuit breaker operations is
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=\linewidth]{figs/6.png}
-    \caption{}
-    \label{fig:6}
-    \end{figure}
+\item Consider the protection system shown in the figure below. The circuit breakers, numbered from 1 to 7 are of identical type. A single line to ground fault with zero fault impedance occurs at the midpoint of the line (at point F), but circuit breaker 4 fails to operate ("stuck breaker"). If the relays are coordinated correctly, a valid sequence of circuit breaker operations is
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig_6.png}
+   \label{stemplot}
+\end{figure}
 \begin{enumerate}
     \begin{multicols}{4}
         \item 1,2,6,7,3,5
@@ -229,13 +213,12 @@ then the magnitude of R is
     \end{multicols}
 \end{enumerate}
 \bigskip
-\item Consider a synchronous generator connected to an infinite bus by two identical parallel transmission lines. The transient reactance $x'$ of the generator is 0.1 pu and the mechanical power input to it is constant at 1.0 pu. Due to some previous disturbance, the rotor angle $\brak{\delta}$ is undergoing an undamped oscillation, with the maximum value of $\delta\brak{t}$ equal to $130\degree$. One of the parallel lines trips due to relay maloperation at an instant when $\delta\brak{t}=130\degree$ as shown in the figure$\ref{fig:7}$. The maximum value of the per unit line reactance, x, such that the system does not lose synchronism subsequent to this tripping is
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=\linewidth]{figs/7.png}
-    \caption{}
-    \label{fig:7}
-    \end{figure}
+\item Consider a synchronous generator connected to an infinite bus by two identical parallel transmission lines. The transient reactance $x'$ of the generator is 0.1 pu and the mechanical power input to it is constant at 1.0 pu. Due to some previous disturbance, the rotor angle $\brak{\delta}$ is undergoing an undamped oscillation, with the maximum value of $\delta\brak{t}$ equal to $130\degree$. One of the parallel lines trips due to relay maloperation at an instant when $\delta\brak{t}=130\degree$ as shown in the figure. The maximum value of the per unit line reactance, x, such that the system does not lose synchronism subsequent to this tripping is
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig_7.png}
+   \label{stemplot}
+\end{figure}
 \begin{enumerate}
   \begin{multicols}{4}
         \item 0.87
@@ -262,13 +245,12 @@ Now ,if it is given that: $\myvec{V_p\\V_n\\V_p}=\myvec{0.5&0&0\\0&0.5&0\\0&0&2.
     \end{multicols}
 \end{enumerate}
 \bigskip
-\item Consider the two power systems shown in figure A$\ref{fig:8}$ below, which are initially not interconnected, and are operating in steady state at the same frequency. Separate loadflow solutions are computed individually for the two systems, corresponding to this scenario. The bus voltage phasors so obtained are indicated on figure A. These two isolated systems are now interconnected by a short transmission line as shown in figure B, and it is  found that $P_1=P_2=Q_1=Q_2=0$.
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=\linewidth]{figs/8.png}
-    \caption{}
-    \label{fig:8}
-    \end{figure}
+\item Consider the two power systems shown in figure A below, which are initially not interconnected, and are operating in steady state at the same frequency. Separate loadflow solutions are computed individually for the two systems, corresponding to this scenario. The bus voltage phasors so obtained are indicated on figure A. These two isolated systems are now interconnected by a short transmission line as shown in figure B, and it is  found that $P_1=P_2=Q_1=Q_2=0$.
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/fig_8.png}
+   \label{stemplot}
+\end{figure}
 The bus voltage phase angular difference between generator bus X and generator bus Y after the interconnection is
 \begin{enumerate}
     \begin{multicols}{4}
@@ -299,7 +281,8 @@ The bus voltage phase angular difference between generator bus X and generator b
     \end{multicols}
 \end{enumerate}
 \end{enumerate}
-\end{document}
 
+  
+\end{document}
 
 

@@ -1,0 +1,19 @@
+\begin{circuitikz}[american]
+    % Power sources
+    \draw (0,2) to[V, v=+10V] (0,0);
+    \draw (0,-2) to[V, v=-10V] (0,0);
+
+    % Input voltage
+    \draw (1,0) -- ++(0.5,0) node at (1.5,0) {$V_{in}$} -- (2,0);
+
+    % Transistor symbol
+    \draw (2,0) -- (2, 1.5);
+    \draw (2, 1.5) to[npn] (3, 1.5);
+    \draw (3, 1.5) -- (3, 0);
+    
+    % Resistor
+    \draw (3, 0) to[R, l=$R_L = 10\,\Omega$] (4, 0) -- (4, -2) node[ground]{};
+
+    % Connect the transistor to the positive voltage source
+    \draw (0, 2) |- (2, 1.5);
+\end{circuitikz}

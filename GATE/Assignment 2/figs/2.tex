@@ -1,0 +1,32 @@
+\begin{circuitikz}
+            % Set font size smaller using \scriptsize or another size as needed
+            \tikzstyle{every node}=[font=\scriptsize]
+
+            \draw (10,15.5) to[short] (12,15.5);
+            \draw (10,14) to[short] (10,15.5);
+            \draw (10,14) to[short] (10,12.25);
+            \draw (10,12.25) to[short] (12,12.25);
+            \draw (12,16.25) to[short] (12,14.75);
+            \draw (12,13) to[short] (12,11.5);
+            \draw (8,13.75) to[short] (10,13.75);
+            \draw (12,12.25) to[short] (12.75,11.5);
+            \draw (12,15.5) to[short] (12.75,16.25);
+            \draw (12.75,18) to[short] (12.75,16.25);
+            \draw (12.75,11.5) to[short] (12.75,9.75);
+            \draw (12.75,14.75) to[short] (12.75,12.75);
+            \draw [->, >=Stealth] (12,15.25) .. controls (12.5,15) and (12.5,15) .. (12.75,14.75);
+            \draw [->, >=Stealth] (12.75,12.75) -- (12,12.25);
+            \draw (12.75,13.75) to[short] (14.75,13.75);
+            \draw (14.75,13.75) to[R] (14.75,11.75);
+            \draw (14,11.75) to[short] (15.5,11.75);
+            \draw (14.25,11.5) to[short] (15.25,11.5);
+            \draw (14.5,11.25) to[short] (15,11.25);
+            \draw (14.75,11) to[short] (15,11);
+            \draw (12.75,18.25) circle (0.25cm);
+            \draw (12.75,9.5) circle (0.25cm);
+            \draw (7.75,13.75) circle (0.25cm);
+            \node [font=\scriptsize] at (7,13.75) {$V_{in}$};
+            \node [font=\scriptsize] at (12.75,19) {+ 10 V};
+            \node [font=\scriptsize] at (12.5,8.75) {- 10 V};
+            \node [font=\scriptsize] at (16.5,12.75) {$R_{L} = 10 \Omega$};
+        \end{circuitikz}
