@@ -1,0 +1,15 @@
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (5,12.25) to[battery ,l={ \normalsize $V_{in}$}] (5,14.75);
+\draw (5,14.75) to[short, -o] (7,14.75) node[above] {$A$};
+\draw (9.5,14.5) to[short, -o] (7.75,14.5) node[above] {$P$};
+\draw (7.75,14.5) to[short] (7,14.5);
+\draw (7,14.5) to[short] (7,15);
+\draw (9.5,14.5) to[L ] (11.5,14.5);
+\draw (11.5,14.5) to[R,l={ \normalsize $V_{out}$}] (11.5,12.75);
+\draw (5,12.25) to[short] (11.5,12.25);
+\draw (11.5,12.25) to[short] (11.5,13);
+\draw (6,12.25) to[short, -o] (6,13.75) node[right] {$B$};
+\end{circuitikz}
+

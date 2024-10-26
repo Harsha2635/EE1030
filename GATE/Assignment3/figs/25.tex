@@ -1,0 +1,18 @@
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (4.75,9.25) to[empty Zener diode] (4.75,10.75);
+\draw (6.5,10.5) to[empty Zener diode] (6.5,12.25);
+\draw (6.5,9.25) to[empty Zener diode] (6.5,10.5);
+\draw (4.75,10.75) to[empty Zener diode] (4.75,12.25);
+\draw (3.75,10.5) to[short] (6.5,10.5);
+\draw (4.75,9.25) to[short] (8.5,9.25);
+\draw (4.75,12.25) to[short] (6.75,12.25);
+\draw (4.25,11) to[short] (4.75,11);
+\draw (6.5,12.25) to[L ] (8.5,12.25);
+\draw [short] (8.5,11.5) -- (8.5,12.25)node[pos=0.55,right, fill=white]{   +};
+\draw (8.5,11.75) to[R,l={ \LARGE $V_{dc}$}] (8.5,10);
+\draw [short] (8.5,10.25) -- (8.5,9.25)node[pos=0.5,right, fill=white]{   -};
+\end{circuitikz}
+
+

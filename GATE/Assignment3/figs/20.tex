@@ -1,0 +1,18 @@
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (4.5,10.25) .. controls (5.5,10.25) and (4.75,10.25) .. (7.75,10.25)node[pos=0,left, fill=white]{R};
+\draw [short] (4.5,7.75) .. controls (5,7.75) and (4.25,7.75) .. (6.75,7.75)node[pos=0,left, fill=white]{Y};
+\draw (7.75,8.75) to[L ] (8.75,7.75);
+\draw (6.75,7.75) to[L ] (7.75,8.75);
+\draw (7.75,8.75) to[L ] (7.75,10.25);
+\draw (8.75,7.75) to[short] (8.75,7);
+\draw [short] (4.5,7) .. controls (8,7) and (7.75,7) .. (8.75,7)node[pos=0,left, fill=white]{B};
+\draw (11.5,7.5) to[L ] (11.5,10);
+\draw (11.5,10) to[L ] (12.75,8.75);
+\draw (11.5,7.5) to[L ] (12.75,8.75);
+\draw [short] (14.75,8.75) .. controls (13.25,8.75) and (12.5,8.75) .. (13,8.75)node[pos=0,right, fill=white]{b};
+\draw [short] (14.75,10) .. controls (11.75,10) and (12.5,10) .. (11.5,10)node[pos=0,right, fill=white]{r};
+\draw [short] (14.75,7.5) .. controls (11.75,7.5) and (12.5,7.5) .. (11.5,7.5)node[pos=0,right, fill=white]{y};
+\end{circuitikz}
+

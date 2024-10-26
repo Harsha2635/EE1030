@@ -1,0 +1,20 @@
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (5.75,11.25) to[short] (5.75,11.25);
+\draw (7.5,5.5) to[battery1,l=$+2 V$] (7.5,6.75);
+\draw (4.75,7.75) to[european resistor,l={ \normalsize R}] (7.5,7.75);
+\draw (7.25,9.25) to[european resistor,l={ \normalsize 2R}] (10.25,9.25);
+\draw [ fill={rgb,255:red,252; green,252; blue,252} ](9,7.25) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+\draw [ fill={rgb,255:red,252; green,252; blue,252} ](opamp2.+) to[short] (7.5,7.75);
+\draw [ fill={rgb,255:red,252; green,252; blue,252} ] (opamp2.-) to[short] (7.5,6.75);
+\draw [ fill={rgb,255:red,252; green,252; blue,252} ](10.2,7.25) to[short](10.5,7.25);
+\draw [short] (8.75,6.75) -- (8.75,6)node[pos=0.95,right, fill=white]{-10 V};
+\draw [short] (8.75,7.75) -- (8.75,8.5)node[pos=0.85,right, fill=white]{+10 V};
+\draw [short] (10,7.25) -- (11,7.25)node[pos=1,right, fill=white]{$V_0$};
+\draw (7.25,7.75) to[short] (7.25,9.25);
+\draw (10.25,9.25) to[short] (10.25,7.25);
+\draw (7.5,5.5) to (7.5,5.25) node[ground]{};
+\draw (4.75,7.75) to (4.75,7.5) node[ground]{};
+\end{circuitikz}
+
