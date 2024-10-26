@@ -1,0 +1,329 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{circuitikz}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{EE\\2010}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+\maketitle
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section*{Q.1-Q.25 carry one mark each}
+
+    \begin{enumerate}
+    \item Power is transferred from system A to system B by an HVDC link as shown in the figure $\ref{fig:1}$ . If the voltages $V_{AB}$ and $V_{CD}$ are as indicated in the figure, and $I > 0$, then:
+    	\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\linewidth]{figs/14.png}
+    \caption{}
+    \label{fig:1}
+    \end{figure}
+    \begin{enumerate}
+        \item $V_{AB} < 0, V_{CD} < 0, V_{AB} > V_{CD}$
+        \item $V_{AB} > 0, V_{CD} > 0, V_{AB} < V_{CD}$
+        \item $V_{AB} > 0, V_{CD} > 0, V_{AB} > V_{CD}$
+        \item $V_{AB} > 0, V_{CD} < 0$
+    \end{enumerate}
+
+    \item A balanced three-phase voltage is applied to a star-connected induction motor, the phase to neutral voltage being $V$. The stator resistance, rotor resistance referred to the stator, stator leakage reactance, rotor leakage reactance referred to the stator, and the magnetizing reactance are denoted by $r_s$, $r_r'$, $x_s$, $x_r'$ and $X_m$, respectively. The magnitude of the starting current of the motor is given by:
+    \begin{enumerate}
+        \item $\frac{V}{\sqrt{(r_s + r_r')^2 + (x_s + x_r')^2}}$
+        \item $\frac{V}{\sqrt{r_s^2 + (x_s + X_m)^2}}$
+        \item $\frac{V}{\sqrt{(r_s + r_r')^2 + (X_m + x_s)^2}}$
+        \item $\frac{V}{\sqrt{r_s^2 + (X_m + x_r')^2}}$
+    \end{enumerate}
+
+    \item Consider a step voltage wave of magnitude 1 pu traveling along a lossless transmission line that terminates in a reactor. The voltage magnitude across the reactor at the instant the traveling wave reaches the reactor is:
+    \begin{figure}[!ht]
+			\centering
+			\input{figs/16.tex}
+			\caption{}
+			\label{fig:2}
+	\end{figure}
+
+    \begin{enumerate}
+	\begin{multicols}{4}
+        \item $1$ pu
+        \item $1$ pu
+        \item $2$ pu
+        \item $3$ pu
+        \end{multicols}
+    \end{enumerate}
+
+    \item Consider two buses connected by an impedance of $(0 + j5) \Omega$. The bus 1 voltage is $100 \angle 30^\circ \, V$ and bus 2 voltage is $100 \angle 0^\circ \, V$. The real and reactive power supplied by bus 1, respectively, are:
+    \begin{enumerate}
+    \begin{multicols}{2}
+        \item 1000 W, 268 VAr
+        \columnbreak
+        \item $-1000$ W, $-134$ VAr
+        \end{multicols}
+        \begin{multicols}{2}
+        \item 276.9 W, $-56.7$ VAr
+        \item $-276.9$ W, 56.7 VAr
+        \end{multicols}
+    \end{enumerate}
+
+    \item A three-phase, 33 kV oil circuit breaker is rated 1200 A, 2000 MVA, 3 s. The symmetrical breaking current is:
+    \begin{enumerate}
+    \begin{multicols}{4}
+        \item 1200 A
+        \item 3600 A
+        \item 35 kA
+        \item 104.8 kA
+        \end{multicols}
+    \end{enumerate}
+
+    \item Consider a stator winding of an alternator with an internal high-resistance ground fault. The currents under the fault condition are as shown in the figure. The winding is protected using a differential current scheme with current transformers of ratio 400/5 A as shown in figure$\ref{fig:3}$. The current through the operating coil is:
+    \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\linewidth]{figs/19.png}
+    \caption{}
+    \label{fig:3}
+    \end{figure}
+    \begin{enumerate}
+    \begin{multicols}{4}
+        \item 0.1875 A
+        \item 0.2 A
+        \item 0.375 A
+        \item 60 kA
+	\end{multicols}
+    \end{enumerate}
+ \item   The zero-sequence circuit of the three-phase transformer shown in the figure$\ref{fig:4}$ is
+
+\begin{figure}[!ht]
+    
+			\centering
+			\input{figs/20.tex}
+			\caption{}
+			\label{fig:4}
+		\end{figure}
+\begin{enumerate}
+
+    \item[]
+
+    \begin{figure}[H]
+        \centering
+
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \input{figs/20_options/a1.tex}
+            \caption*{(a)}
+        \end{minipage}%
+        \hfill
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \input{figs/20_options/a2.tex}
+            \caption*{(b)}
+        \end{minipage}
+
+    \end{figure}
+
+    \item[]
+
+    \begin{figure}[H]
+        \centering
+
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \input{figs/20_options/a3.tex}
+            \caption*{(c)}
+        \end{minipage}%
+        \hfill
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \input{figs/20_options/a4.tex}
+            \caption*{(d)}
+        \end{minipage}
+
+    \end{figure}
+    
+\end{enumerate}
+
+\item Given that the op-amp is ideal, the output voltage $V_0$ is
+	\begin{figure}[!ht]
+    
+			\centering
+			\input{figs/21.tex}
+			\caption{}
+			\label{fig:5}
+		\end{figure}
+
+\begin{enumerate}
+\begin{multicols}{4}
+    \item  4 V
+    \item  6 V
+    \item  7.5 V
+    \item  12.12 V
+    \end{multicols}
+\end{enumerate}
+
+\item Assuming that the diodes in the given circuit shown in figure$\ref{fig:6}$ are ideal, the voltage $V_0$ is
+\begin{figure}[!ht]
+    
+			\centering
+			\input{figs/22.tex}
+			\caption{}
+			\label{fig:6}
+		\end{figure}
+
+\begin{enumerate}
+\begin{multicols}{4}
+    \item  4 V
+    \item  5 V
+    \item  7.5 V
+    \item  12.12 V
+    \end{multicols}
+\end{enumerate}
+
+    \item The power electronic converter shown in the figure$\ref{fig:7}$ has a single-pole double-throw switch. The pole P of the switch is connected alternately to throws A and B. The converter shown is a:
+    \begin{figure}[!ht]
+    
+			\centering
+			\input{figs/23.tex}
+			\caption{}
+			\label{fig:7}
+		\end{figure}
+    \begin{enumerate}
+        \item step-down chopper (buck converter)
+        \item half-wave rectifier
+        \item step-up chopper (boost converter)
+        \item full-wave rectifier
+    \end{enumerate}
+
+    \item Figure$\ref{fig:8}$ shows a composite switch consisting of a power transistor (BJT) in series with a diode. Assuming that the transistor switch and the diode are ideal, the I-V characteristic of the composite switch is:
+    \begin{figure}[H]
+    
+			\centering
+			\input{figs/24.tex}
+			\caption{}
+			\label{fig:8}
+		\end{figure}
+    
+
+
+\begin{enumerate}
+
+    \item[]
+
+    \begin{figure}[H]
+        \centering
+
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/24_options/a1.png}
+            \caption*{(a)}
+        \end{minipage}%
+        \hfill
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/24_options/a2.png}
+            \caption*{(b)}
+        \end{minipage}
+
+    \end{figure}
+
+    \item[]
+
+    \begin{figure}[H]
+        \centering
+
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/24_options/a3.png}
+            \caption*{(c)}
+        \end{minipage}%
+        \hfill
+        \begin{minipage}{0.45\linewidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/24_options/a4.png}
+            \caption*{(d)}
+        \end{minipage}
+
+    \end{figure}
+    
+\end{enumerate}
+    \item The fully controlled thyristor converter in the figure$\ref{fig:9}$ is fed from a single-phase source. When the firing angle is $0^\circ$, the dc output voltage of the converter is 300 V. What will be the output voltage for a firing angle of $60^\circ$, assuming continuous conduction?
+    \begin{figure}[H]
+    
+			\centering
+			\input{figs/25.tex}
+			\caption{}
+			\label{fig:9}
+		\end{figure}
+    \begin{enumerate}
+    \begin{multicols}{4}
+        \item 150 V
+        \item 210 V
+        \item 300 V
+        \item $100\pi$ V
+        \end{multicols}
+    \end{enumerate}
+
+    \item At $t = 0$, the function $f(t) = \frac{\sin t}{t}$ has:
+    \begin{enumerate}
+        \item a minimum
+        \item a discontinuity
+        \item a point of inflection
+        \item a maximum
+    \end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}
+
