@@ -1,0 +1,22 @@
+\scalebox{0.5}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (4.25,10) to[short] (11,10);
+\draw (4.25,7.75) to[short] (6.75,7.75);
+\draw (8.5,7.75) to[short] (11,7.75);
+\draw (6.75,5.25) to[short] (6.75,7.75);
+\draw (8.5,5.25) to[short] (8.5,7.75);
+\draw [dashed] (6,6.75) -- (9.25,6.75)node[pos=0.9,above, fill=white]{R};
+\draw [->, >=Stealth] (7.5,7.25) -- (7.5,6)node[pos=0.85,below, fill=white]{V=?};
+\draw [->, >=Stealth] (9.25,6) -- (8.5,6.5);
+\draw [short] (9.25,6) -- (11,6)node[pos=1, fill=white]{dia = 2 m};
+\draw [dashed] (10,7.25) -- (10,10.5)node[pos=0.95,right, fill=white]{Q};
+\draw [dashed] (5,7.25) -- (5,10.5)node[pos=0.95,left, fill=white]{P};
+\draw [->, >=Stealth] (3.75,9) -- (5.75,9)node[pos=0, fill=white]{V=6m/s};
+\draw [->, >=Stealth] (8.75,9) -- (10.75,9)node[pos=0.95,right, fill=white]{V=5m/s};
+\draw [->, >=Stealth] (6.25,10.5) -- (6,9.5);
+\draw [->, >=Stealth] (8.75,10.5) -- (9,9.5);
+\draw [short] (8.25,10.5) -- (8.75,10.5)node[pos=0,left, fill=white]{dia = 4m};
+\draw (6.25,10.5) to[short] (6.75,10.5);
+\end{circuitikz}
+}
