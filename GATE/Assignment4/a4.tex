@@ -1,12 +1,7 @@
-\let\negmedspace\undefined
-\let\negthickspace\undefined
+% LaTeX document class and packages
 \documentclass[journal]{IEEEtran}
 \usepackage[a5paper, margin=10mm, onecolumn]{geometry}
-%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
-\usepackage{tfrupee} % Include tfrupee package
-
-\setlength{\headheight}{1cm} % Set the height of the header box
-\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{tfrupee}
 \usepackage{gvv-book}
 \usepackage{gvv}
 \usepackage{cite}
@@ -22,34 +17,25 @@
 \usepackage{gensymb}
 \usepackage{comment}
 \usepackage[breaklinks=true]{hyperref}
-\usepackage{tkz-euclide} 
+\usepackage{tkz-euclide}
 \usepackage{listings}
-% \usepackage{gvv}                                        
-\def\inputGnumericTable{}                                 
-\usepackage[latin1]{inputenc}                                
-\usepackage{color}                                            
-\usepackage{array}                                            
-\usepackage{longtable}                                       
-\usepackage{calc}                                             
-\usepackage{multirow}                                         
-\usepackage{hhline}                                           
-\usepackage{ifthen}                                           
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
 \usepackage{lscape}
 \usepackage{circuitikz}
 \usepackage{float}
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\setlength{\intextsep}{10pt} % Space between text and floats
-
-
+\setlength{\intextsep}{10pt}
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
-\renewcommand{\thetable}{\theenumi}
 
-
-
-
-% Marks the beginning of the document
 \begin{document}
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
@@ -60,16 +46,13 @@
 
 \bigskip
 
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
-
 \section*{Q.1-Q.25 carry one mark each}
 \begin{enumerate}
 
-\item  A smooth rigid retaining wall moves as shown$\ref{fig:1}$ in the sketch causing the backfill material to fail. The backfill material is homogeneous and isotropic, and obeys the Mohr-Coulomb failure criterion. The major principal stress is
+\item A smooth rigid retaining wall moves as shown$\ref{fig:1}$ in the sketch causing the backfill material to fail. The backfill material is homogeneous and isotropic, and obeys the Mohr-Coulomb failure criterion. The major principal stress is
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{figs/1.png} % Change 0.5 to any scale factor
+    \includegraphics[scale=0.5]{figs/1.png}
     \caption{}
     \label{fig:1}
 \end{figure}
@@ -79,7 +62,6 @@
     \item oblique to the wall face acting downwards
     \item oblique to the wall face acting upwards
 \end{enumerate}
-
 \item An embankment is to be constructed with a granular soil (bulk unit weight = 20 kN/m$^3$) on a saturated clayey silt deposit (undrained shear strength = 25 kPa). Assuming undrained general shear failure and bearing capacity factor of 5.7, the maximum height (in m) of the embankment at the point of failure is
 
 \begin{enumerate}
@@ -112,14 +94,14 @@
     \item 20
     \end{multicols}
 \end{enumerate}
-\item  The circular water pipes shown in the sketch$\ref{fig:2}$ are flowing full. The velocity of flow (in m/s) in the branch pipe "R" is
-	\begin{figure}[H]
-    
-			\centering
-			\input{figs/2.tex}
-			\label{fig:2}
-			\caption{}
-		\end{figure}
+\item The circular water pipes shown in the sketch$\ref{fig:2}$ are flowing full. The velocity of flow (in m/s) in the branch pipe "R" is
+\begin{figure}[H]
+    \centering
+    \input{figs/2.tex}
+    \caption{}
+    \label{fig:2}
+\end{figure}
+
 \begin{enumerate}
 \begin{multicols}{4}
     \item 3
@@ -229,8 +211,8 @@ is $2 \times 10^{-3}$. The values of $x_0$ and $f(x_0)$ are 19.78 and 500.01, re
         \item $9.0 \times 10^{-4}$
     \end{multicols}
 \end{enumerate}
-\end{enumerate}
 
+\end{enumerate}
 
 \end{document}
 
