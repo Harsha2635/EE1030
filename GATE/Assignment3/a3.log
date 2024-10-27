@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  27 OCT 2024 11:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  27 OCT 2024 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1912,23 +1912,26 @@ LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <7> not available
 LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <5> not available
 (Font)              Font shape `TS1/txr/bx/n' tried instead on input line 8.
 )
-(./figs/22.tex) (./figs/23.tex) [3] [4] (./figs/24.tex)
-<figs/24_options/a1.png, id=118, 337.26pt x 212.795pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+(./figs/22.tex) [4] (./figs/23.tex) (./figs/24.tex)
+<figs/24_options/a1.png, id=109, 337.26pt x 212.795pt>
 File: figs/24_options/a1.png Graphic file (type png)
 <use figs/24_options/a1.png>
 Package pdftex.def Info: figs/24_options/a1.png  used on input line 268.
 (pdftex.def)             Requested size: 163.88676pt x 103.40675pt.
-<figs/24_options/a2.png, id=120, 337.26pt x 212.795pt>
+<figs/24_options/a2.png, id=111, 337.26pt x 212.795pt>
 File: figs/24_options/a2.png Graphic file (type png)
 <use figs/24_options/a2.png>
 Package pdftex.def Info: figs/24_options/a2.png  used on input line 274.
 (pdftex.def)             Requested size: 163.88676pt x 103.40675pt.
-<figs/24_options/a3.png, id=121, 337.26pt x 212.795pt>
+<figs/24_options/a3.png, id=112, 337.26pt x 212.795pt>
 File: figs/24_options/a3.png Graphic file (type png)
 <use figs/24_options/a3.png>
 Package pdftex.def Info: figs/24_options/a3.png  used on input line 287.
 (pdftex.def)             Requested size: 163.88676pt x 103.40675pt.
-<figs/24_options/a4.png, id=122, 337.26pt x 212.795pt>
+<figs/24_options/a4.png, id=113, 337.26pt x 212.795pt>
 File: figs/24_options/a4.png Graphic file (type png)
 <use figs/24_options/a4.png>
 Package pdftex.def Info: figs/24_options/a4.png  used on input line 293.
@@ -1943,18 +1946,14 @@ LaTeX Font Info:    Calculating math sizes for size <17> on input line 14.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `a3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 55939 strings out of 474222
- 1343111 string characters out of 5748733
- 1987975 words of memory out of 5000000
- 77246 multiletter control sequences out of 15000+600000
+ 55918 strings out of 474222
+ 1342473 string characters out of 5748733
+ 1969975 words of memory out of 5000000
+ 77225 multiletter control sequences out of 15000+600000
  664914 words of font info for 284 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,12n,109p,1192b,1305s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1966,7 +1965,7 @@ ts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txbsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a3.pdf (6 pages, 91861 bytes).
+Output written on a3.pdf (6 pages, 91853 bytes).
 PDF statistics:
  210 PDF objects out of 1000 (max. 8388607)
  158 compressed objects within 2 object streams
