@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  26 OCT 2024 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.21)  27 OCT 2024 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1898,23 +1898,11 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-)
-<figs/14.png, id=32, 728.7225pt x 197.73875pt>
-File: figs/14.png Graphic file (type png)
-<use figs/14.png>
-Package pdftex.def Info: figs/14.png  used on input line 72.
-(pdftex.def)             Requested size: 364.1953pt x 98.82387pt.
- (./figs/16.tex)
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
+) (./figs/14.tex)
+(./figs/16.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/shar
+e/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
- <./figs/14.png>]
-<figs/19.png, id=60, 747.79375pt x 253.94875pt>
-File: figs/19.png Graphic file (type png)
-<use figs/19.png>
-Package pdftex.def Info: figs/19.png  used on input line 134.
-(pdftex.def)             Requested size: 364.1953pt x 123.68036pt.
- [2 <./figs/19.png>]
+] (./figs/19.tex) [2]
 (./figs/20.tex) (./figs/20_options/a1.tex) (./figs/20_options/a2.tex)
 (./figs/20_options/a3.tex) (./figs/20_options/a4.tex) (./figs/21.tex
 LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <10> not available
@@ -1925,22 +1913,22 @@ LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <5> not available
 (Font)              Font shape `TS1/txr/bx/n' tried instead on input line 8.
 )
 (./figs/22.tex) (./figs/23.tex) [3] [4] (./figs/24.tex)
-<figs/24_options/a1.png, id=122, 337.26pt x 212.795pt>
+<figs/24_options/a1.png, id=118, 337.26pt x 212.795pt>
 File: figs/24_options/a1.png Graphic file (type png)
 <use figs/24_options/a1.png>
 Package pdftex.def Info: figs/24_options/a1.png  used on input line 268.
 (pdftex.def)             Requested size: 163.88676pt x 103.40675pt.
-<figs/24_options/a2.png, id=123, 337.26pt x 212.795pt>
+<figs/24_options/a2.png, id=120, 337.26pt x 212.795pt>
 File: figs/24_options/a2.png Graphic file (type png)
 <use figs/24_options/a2.png>
 Package pdftex.def Info: figs/24_options/a2.png  used on input line 274.
 (pdftex.def)             Requested size: 163.88676pt x 103.40675pt.
-<figs/24_options/a3.png, id=124, 337.26pt x 212.795pt>
+<figs/24_options/a3.png, id=121, 337.26pt x 212.795pt>
 File: figs/24_options/a3.png Graphic file (type png)
 <use figs/24_options/a3.png>
 Package pdftex.def Info: figs/24_options/a3.png  used on input line 287.
 (pdftex.def)             Requested size: 163.88676pt x 103.40675pt.
-<figs/24_options/a4.png, id=125, 337.26pt x 212.795pt>
+<figs/24_options/a4.png, id=122, 337.26pt x 212.795pt>
 File: figs/24_options/a4.png Graphic file (type png)
 <use figs/24_options/a4.png>
 Package pdftex.def Info: figs/24_options/a4.png  used on input line 293.
@@ -1963,11 +1951,11 @@ Package rerunfilecheck Info: File `a3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 55278 strings out of 474222
- 1322317 string characters out of 5748733
- 1986975 words of memory out of 5000000
- 76595 multiletter control sequences out of 15000+600000
- 649896 words of font info for 240 fonts, out of 8000000 for 9000
+ 55939 strings out of 474222
+ 1343111 string characters out of 5748733
+ 1987975 words of memory out of 5000000
+ 77246 multiletter control sequences out of 15000+600000
+ 664914 words of font info for 284 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,12n,109p,1192b,1305s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
@@ -1978,10 +1966,10 @@ ts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txbsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a3.pdf (6 pages, 103516 bytes).
+Output written on a3.pdf (6 pages, 91861 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  158 compressed objects within 2 object streams
  78 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
