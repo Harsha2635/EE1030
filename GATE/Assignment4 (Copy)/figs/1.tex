@@ -1,0 +1,25 @@
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (5.25,6.25) to[short] (5.25,6.25);
+\draw (5.5,6.75) to[short] (9.5,6.75);
+\draw (5.5,6.75) to[short] (9.5,10.75);
+\draw (7.75,6.75) to[short] (9.5,8.5);
+\draw (9.5,6.75) to[short] (9.5,10.75);
+\draw (7.25,8.5) to[short] (9.5,8.5);
+\draw (7.75,8.5) to[short] (7.75,6.75);
+\node at (7.25,8.5) [circ] {};
+\node at (9.5,10.75) [circ] {};
+\node at (9.5,8.5) [circ] {};
+\node at (9.5,6.75) [circ] {};
+\node at (7.75,6.75) [circ] {};
+\node at (5.5,6.75) [circ] {};
+\draw [short] (6.5,6.75) -- (6.5,6.75);
+\draw [short] (5.5,6.75) -- (7.5,6.75)node[pos=0.55,below, fill=white]{P                S};
+\draw [short] (9.5,6.75) -- (9.5,8)node[pos=0,below, fill=white]{Q};
+\draw [short] (9.5,9.5) -- (9.5,10.75)node[pos=1,above, fill=white]{R};
+\draw [short] (7.25,8.5) -- (9.5,8.5)node[pos=0,above, fill=white]{U};
+\draw [short] (7.5,8.5) -- (9.5,8.5)node[pos=1,right, fill=white]{T};
+
+\end{circuitikz}
+
