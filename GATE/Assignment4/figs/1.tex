@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+% Define styles
+\tikzset{granular/.style={fill=gray, pattern=dots, pattern color=black!50}}
+
+% Draw the backfill soil with granular pattern
+\fill[granular] (0,0) -- (6,0) -- (6,3) -- (0,3) -- cycle;
+
+% Initial and final wall positions
+\fill[gray!70] (1,0) rectangle (1.3,3); % Initial wall position
+\fill[gray!40] (1.5,0) rectangle (1.8,3); % Final wall position
+
+% Labels for wall positions at the top
+\node[anchor=south] at (1.15,3.4) {\small Initial wall position};
+\node[anchor=south] at (2.8,3.2) {\small Final wall position};
+\draw[thick, <-] (1.15,3) -- (1.15,3.1);
+\draw[thick, <-] (1.65,3) -- (1.65,3.1);
+
+% Symbols below the wall positions
+\fill[black] (1.15, 0.1) circle (0.05); % Symbol below initial wall position
+\fill[black] (1.65, 0.1) circle (0.05); % Symbol below final wall position
+
+% Triangle showing the sliding soil with granular pattern
+\fill[pattern=dots, pattern color=black!50] (1.8,0) -- (5,0) -- (1.8,2.5) -- cycle;
+
+% Label for backfill
+\node[align=center] at (3.5,1.5) {\small Dry, granular,\\cohesionless backfill\\with horizontal top\\surface};
+
+% Ground level
+\draw (0,3) -- (6,3);
+
+% Axis and boundaries
+\draw[thick] (0,0) -- (0,3.5);
+\draw[thick] (6,0) -- (6,3.5);
+\end{tikzpicture}
+

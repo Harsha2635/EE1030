@@ -30,6 +30,7 @@
 \usepackage{lscape}
 \usepackage{circuitikz}
 \usepackage{float}
+\usetikzlibrary{patterns}
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \setlength{\intextsep}{10pt}
@@ -52,7 +53,7 @@
 \item A smooth rigid retaining wall moves as shown$\ref{fig:1}$ in the sketch causing the backfill material to fail. The backfill material is homogeneous and isotropic, and obeys the Mohr-Coulomb failure criterion. The major principal stress is
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{figs/1.png}
+    \input{figs/1.tex}
     \caption{}
     \label{fig:1}
 \end{figure}
