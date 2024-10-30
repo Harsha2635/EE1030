@@ -1,0 +1,231 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{MA\\2018}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+\maketitle
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+\section*{Q.1 to Q.5 carry 1 mark each}
+\item Let $ X $ and $ Y $ be metric spaces, and let $ f : X \to Y $ be a continuous map. For any subset $ S $ of $ X $, which one of the following statements is true? 
+\begin{enumerate}
+    \item If $ S $ is open, then $ f(S) $ is open
+    \item If $ S $ is connected, then $ f(S) $ is connected
+    \item If $ S $ is closed, then $ f(S) $ is closed
+    \item If $ S $ is bounded, then $ f(S) $ is bounded
+\end{enumerate}
+
+\bigskip
+
+\item The general solution of the differential equation  
+\begin{align*}
+    xy' = y + \sqrt{x^2 + y^2} \quad \text{for } x > 0
+\end{align*}
+is given by (with an arbitrary positive constant $ k $)
+\begin{enumerate}
+\begin{multicols}{2}
+    \item $ ky^2 = x + \sqrt{x^2 + y^2} $
+    \columnbreak
+    \item $ kx^2 = x + \sqrt{x^2 + y^2} $
+    \end{multicols}
+    \begin{multicols}{2}
+    \item $ kx^2 = y + \sqrt{x^2 + y^2} $
+    \item $ ky^2 = y + \sqrt{x^2 + y^2} $
+    \end{multicols}
+\end{enumerate}
+\bigskip
+\item  Let $ p_n(x) $ be the polynomial solution of the differential equation
+$
+\frac{d}{dx}\left[(1 - x^2)y'\right] + n(n + 1)y = 0
+$
+with $ p_n(1) = 1 $ for $ n = 1, 2, 3, \ldots $. If 
+$
+\frac{d}{dx}[p_{n + 2}(x) - p_n(x)] = \alpha_n p_{n + 1}(x),
+$
+then $ \alpha_n $ is 
+\begin{enumerate}
+\begin{multicols}{4}
+    \item $ 2n $ 
+    \item $ 2n + 1 $ 
+    \item $ 2n + 2 $ 
+    \item $ 2n + 3 $ 
+    \end{multicols}
+\end{enumerate}
+\bigskip
+
+
+\item  In the permutation group $ S_6 $, the number of elements of order 8 is
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 0 
+    \item 1 
+    \item 2 
+    \item 4 
+    \end{multicols}
+\end{enumerate}
+\bigskip
+
+\item  Let $ R $ be a commutative ring with 1 (unity) which is not a field. Let $ I \subset R $ be a proper ideal such that every element of $ R $ not in $ I $ is invertible in $ R $. Then the number of maximal ideals of $ R $ is 
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 1 
+    \item 2 
+    \item 3 
+    \item infinite 
+    \end{multicols}
+\end{enumerate}
+
+\bigskip
+
+\item  Let $ f : \mathbb{R} \to \mathbb{R} $ be a twice continuously differentiable function. The order of convergence of the secant method for finding the root of the equation $ f(x) = 0 $ is 
+\begin{enumerate}
+\begin{multicols}{4}
+    \item $ \frac{1 + \sqrt{5}}{2} $ 
+    \item $ \frac{2}{1 + \sqrt{5}} $ 
+    \item $ \frac{1 + \sqrt{5}}{3} $ 
+    \item $ \frac{3}{1 + \sqrt{5}} $ 
+    \end{multicols}
+\end{enumerate}
+
+\bigskip
+
+\item The Cauchy problem $ u_{xx} + y u_y = x $ with $ u(x, 1) = 2x $, when solved using its characteristic equations with an independent variable $ t $, is found to admit a solution in the form
+$
+x = \frac{3}{2} e^t - \frac{1}{2} e^{-t}, \quad y = e^t, \quad u = f(s, t).
+$
+Then $ f(s, t) = $
+\begin{enumerate}
+\begin{multicols}{2}
+    \item $ \frac{3}{2} se^t + \frac{1}{2} se^{-t} $ 
+    \columnbreak
+    \item $ \frac{1}{2} se^t - \frac{3}{2} se^{-t} $ 
+    \end{multicols}
+    \begin{multicols}{2}
+    \item $ \frac{3}{2} se^t - \frac{1}{2} se^{-t} $ 
+    \item $ \frac{3}{2} se^t - \frac{1}{2} se^{-t} $ 
+    \end{multicols}
+\end{enumerate}
+\bigskip
+\item An urn contains four balls, each ball having equal probability of being white or black. Three black balls are added to the urn. The probability that five balls in the urn are black is
+\begin{enumerate}
+\begin{multicols}{4}
+\item $\frac{2}{7}$
+\item $\frac{3}{8}$
+\item $\frac{1}{2}$
+\item $\frac{5}{7}$
+\end{multicols}
+\end{enumerate}
+\bigskip
+\item For a linear programming problem, which one of the following statements is \textbf{FALSE}?
+\begin{enumerate}
+    \item If a constraint is an equality, then the corresponding dual variable is unrestricted in sign
+    \item Both primal and its dual can be infeasible
+    \item If primal is unbounded, then its dual is infeasible
+    \item Even if both primal and dual are feasible, the optimal values of the primal and the dual can differ
+\end{enumerate}
+
+\bigskip
+
+\item Let 
+$
+A = \myvec{
+    a & 2f & 0 \\
+    2f & b & 3f \\
+    0 & 3f & c
+}, 
+$
+where $ a, b, c, f $ are real numbers and $ f \neq 0 $. The geometric multiplicity of the largest eigenvalue of $ A $ equals \underline{\hspace{2cm}}.
+
+\bigskip
+
+\item Consider the subspaces 
+$
+W_1 = \{(x_1, x_2, x_3) \in \mathbb{R}^3 : x_1 = x_2 + 2x_3\}
+$
+$
+W_2 = \{(x_1, x_2, x_3) \in \mathbb{R}^3 : x_1 = 3x_2 + 2x_3\}
+$
+of $ \mathbb{R}^3 $. Then the dimension of $ W_1 + W_2 $ equals \underline{\hspace{2cm}}.
+
+\bigskip
+
+\item Let $ V $ be the real vector space of all polynomials of degree less than or equal to 2 with real coefficients. Let 
+$
+T : V \to V
+$
+be the linear transformation given by 
+$
+T(p) = 2p + p' \quad \text{for } p \in V,
+$
+where $ p' $ is the derivative of $ p $. Then the number of nonzero entries in the Jordan canonical form of a matrix of $ T $ equals \underline{\hspace{2cm}}.
+\bigskip
+
+
+\item Let $ I = [2, 3], J $ be the set of all rational numbers in the interval $ [4, 6] $, $ K $ be the Cantor (ternary) set, and let 
+$
+L = \{x \in I : x \in K\}.
+$
+Then the Lebesgue measure of the set $ I \cup J \cup L $ equals \underline{\hspace{2cm}}.
+\bigskip
+\end{enumerate}
+
+\end{document}
+    
