@@ -1,0 +1,29 @@
+\begin{circuitikz}[scale=0.5]
+\tikzstyle{every node}=[font=\large]
+\draw (6.75,7.5) to[short] (6.75,7.5);
+\draw [ line width=0.7pt](3.5,6.5) to[short] (10.75,6.5);
+\draw [dashed] (10.75,9.25) -- (10.75,6.75);
+\draw [dashed] (3.5,6.75) -- (10.75,6.75);
+\draw [dashed] (3.5,9.25) -- (10.75,9.25);
+\draw [dashed] (3.5,9.25) -- (3.5,6.75);
+\draw [short] (10.75,6.5) .. controls (12.25,6.75) and (12.75,7.25) .. (12.75,9.25);
+\draw [->, >=Stealth] (10.75,8) -- (12.5,8);
+\draw [->, >=Stealth] (10.75,8.75) -- (12.75,8.75);
+\draw [->, >=Stealth] (10.75,9.25) -- (12.75,9.25)node[pos=0.5,above, fill=white]{U};
+\draw [->, >=Stealth] (2,6.75) -- (3.5,6.75);
+\draw [->, >=Stealth] (2,9.25) -- (3.5,9.25)node[pos=0.5,above, fill=white]{U};
+\draw [->, >=Stealth] (2,8.75) -- (3.5,8.75);
+\draw [->, >=Stealth] (2,8.25) -- (3.5,8.25);
+\draw [->, >=Stealth] (2,7.75) -- (3.5,7.75);
+\draw [->, >=Stealth] (2,7.25) -- (3.5,7.25);
+\draw [->, >=Stealth] (10.75,7) -- (12,7);
+\draw [->, >=Stealth] (10.75,7.5) -- (12.5,7.5);
+\draw [->, >=Stealth] (11.25,6.5) -- (13.25,6.5)node[pos=1,right, fill=white]{x};
+\draw [short] (12.75,7.25) -- (14.75,7.25) node[pos=0.5,right, fill=white] {$ u=U(2\eta - \eta^2) $};
+\draw [->, >=Stealth] (3.5,9.5) -- (3.5,10.75)node[pos=1,above, fill=white]{y};
+\draw [->, >=Stealth] (6.75,8.5) -- (8.25,10)node[pos=1,right, fill=white]{Q};
+\draw [short] (5.5,9.25) -- (5.5,9.25)node[pos=0.5,above, fill=white]{y=$\delta$};
+\draw [short] (9.25,9.25) -- (9.25,9.25)node[pos=0.5,below, fill=white]{CV};
+\draw [short] (5.5,6.75) -- (5.5,6.75)node[pos=0.5,above, fill=white]{y=0};
+\end{circuitikz}
+
