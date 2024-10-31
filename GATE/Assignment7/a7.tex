@@ -1,0 +1,233 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{MA\\2019}
+\author{EE24BTECH11063 - Y.Harsha Vardhan Reddy}
+\maketitle
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+\section*{Q.1 to Q.5 carry 1 mark each}
+\item The fishermen, \underline{\hspace{2cm}} the flood victims owed their lives, were rewarded by the government.\\
+\begin{enumerate}
+\begin{multicols}{4}
+    \item whom
+    \item which
+    \item to whom
+    \item that
+    \end{multicols}
+\end{enumerate}
+
+\bigskip
+
+\item Some students were not involved in the strike.\\
+If the above statement is true, which of the following conclusions is/are logically necessary?\\
+\begin{enumerate}
+    \item[(1.)] Some who were involved in the strike were students.
+    \item[(2.)] No student was involved in the strike.
+    \item[(3.)]  At least one student was involved in the strike.
+    \item[(4.)] Some who were not involved in the strike were students.
+\end{enumerate}
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 1 and 2
+    \item 3
+    \item 4
+    \item 2 and 3
+    \end{multicols}
+\end{enumerate}
+
+\bigskip
+
+\item The radius as well as the height of a circular cone increases by 10\%. The percentage increase in its volume is \underline{\hspace{2cm}}.\\
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 17.1
+    \item 21.0
+    \item 33.1
+    \item 72.8
+    \end{multicols}
+\end{enumerate}
+
+\bigskip
+
+\item Five numbers 10, 7, 5, 4 and 2 are to be arranged in a sequence from left to right following the directions given below:\\
+\begin{enumerate}
+    \item[(1.)] No odd or even numbers are next to each other.
+    \item[(2.)] The second number from the left is exactly half of the leftmost number.
+    \item[(3.)] The middle number is exactly twice the right-most number.
+\end{enumerate}
+Which is the second number from the right?\\
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 2
+    \item 4
+    \item 7
+    \item 10
+    \end{multicols}
+\end{enumerate}
+
+\bigskip
+
+\item Until Iran came along, India had never been \underline{\hspace{2cm}} in kabaddi.\\
+\begin{enumerate}
+\begin{multicols}{4}
+    \item defeated
+    \item defeating
+    \item defeat
+    \item defeatist
+    \end{multicols}
+\end{enumerate}
+
+\bigskip
+
+
+
+
+    \item Since the last one year, after a 125 basis point reduction in repo rate by the Reserve Bank of India, banking institutions have been making a demand to reduce interest rates on small saving schemes. Finally, the government announced yesterday a reduction in interest rates on small saving schemes to bring them on par with fixed deposit interest rates.\\
+    Which one of the following statements can be inferred from the given passage?\\
+    \begin{enumerate}
+        \item Whenever the Reserve Bank of India reduces the repo rate, the interest rates on small saving schemes are also reduced.
+        \item Interest rates on small saving schemes are always maintained on par with fixed deposit interest rates.
+        \item The government sometimes takes into consideration the demands of banking institutions before reducing the interest rates on small saving schemes.
+        \item A reduction in interest rates on small saving schemes follow only after a reduction in repo rate by the Reserve Bank of India.
+    \end{enumerate}
+    \bigskip
+
+    \item In a country of 1400 million population, 70\% own mobile phones. Among the mobile phone owners, only 294 million access the Internet. Among these Internet users, only half buy goods from e-commerce portals. What is the percentage of these buyers in the country?\\
+    \begin{enumerate}
+    \begin{multicols}{4}
+        \item 10.50
+        \item 14.70
+        \item 15.00
+        \item 50.00
+        \end{multicols}
+    \end{enumerate}
+    \bigskip
+
+    \item The nomenclature of Hindustani music has changed over the centuries. Since the medieval period, dhrupad styles were identified as baanis. Terms like gayaki and baaj were used to refer to vocal and instrumental styles, respectively. With the institutionalization of music education, the term gharana became acceptable. Gharana originally referred to hereditary musicians from a particular lineage, including disciples and grand disciples.\\
+    Which one of the following pairings is NOT correct?\\
+    \begin{enumerate}
+    \begin{multicols}{2}
+        \item dhrupad, baani
+        \columnbreak
+        \item gayaki, vocal
+        \end{multicols}
+        \begin{multicols}{2}
+        \item baaj, institution
+        \item gharana, lineage
+        \end{multicols}
+    \end{enumerate}
+    \bigskip
+
+    \item Two trains started at 7 AM from the same point. The first train travelled north at a speed of 80 km/h and the second train travelled south at a speed of 100 km/h. The time at which they are 540 km apart is \underline{\hspace{2cm}} AM.\\
+    \begin{enumerate}
+    \begin{multicols}{4}
+        \item 9
+        \item 10
+        \item 11
+        \item 11:30
+        \end{multicols}
+    \end{enumerate}
+    \bigskip
+    \item "I read somewhere that in ancient times the prestige of a kingdom depended upon the number of taxes that it was able to levy on its people. It was very much like the prestige of a head-hunter in his own community."\\
+    Based on the paragraph above, the prestige of a head-hunter depended upon \underline{\hspace{2cm}}.\\
+    \begin{enumerate}
+        \item the prestige of the kingdom
+        \item the prestige of the heads
+        \item the number of taxes he could levy
+        \item the number of heads he could gather
+    \end{enumerate}
+    \bigskip
+    \end{enumerate}
+    \section*{Q.1 to Q.25 carry 1 mark each}
+    \begin{enumerate}
+    \item For a balanced transportation problem with three sources and three destinations where costs, availabilities and demands are all finite and positive, which one of the following statements is FALSE?\\
+    \begin{enumerate}
+        \item The transportation problem does not have unbounded solution
+        \item The number of non-basic variables of the transportation problem is 4
+        \item The dual variables of the transportation problem are unrestricted in sign
+        \item The transportation problem has at most 5 basic feasible solutions
+    \end{enumerate}
+    \bigskip
+
+    \item Let $ f : [a,b] \to \mathbb{R} $ (the set of all real numbers) be any function which is twice differentiable in $ (a,b) $ with only one root $ \alpha \in (a,b) $. Let $ f' (x) $ and $ f''(x) $ denote the first and second order derivatives of $ f(x) $ with respect to $ x $. If $ \alpha $ is a simple root and is computed by the Newton-Raphson method, then the method converges if\\
+    \begin{enumerate}
+        \item $ |f' (x)| f''(x) < |f'(x)|^2 $, for all $ x \in (a,b) $
+        \item $ f(x) f' (x) |f''(x)| < |f'(x)|$, for all $ x \in (a,b) $
+        \item $ |f'(x) f''(x)| < |f'(x)|^2 $, for all $ x \in (a,b) $
+        \item $ f(x) f' (x) < |f'(x)| |f''(x)|, \text{ for all } x \in (a,b) $
+    \end{enumerate}
+    \bigskip
+
+    \item Let $ f : \mathbb{C} \to \mathbb{C} $ (the set of all complex numbers) be defined by\\
+    $ f(x + iy) = x^2 + 3xy^2 + i(y^3 + 3xy^2) $, $ i = \sqrt{-1} $.\\
+    Let $ f'(z) $ denote the derivative of $ f $ with respect to $ z $.\\
+    Then which one of the following statements is TRUE?\\
+    \begin{enumerate}
+        \item $ f'(x + i) \text{ exists and } |f'(1+i)| = 3\sqrt{5} $
+        \item $ f $ is analytic at the origin
+        \item $ f $ is not differentiable at $ i $
+        \item $ f $ is differentiable at 1
+    \end{enumerate}
+    \bigskip
+\end{enumerate}
+\end{document}
+    
