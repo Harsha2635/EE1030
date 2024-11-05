@@ -1,0 +1,18 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (8.5,6.25) rectangle (8.5,6.25);
+\draw [ fill={rgb,255:red,194; green,189; blue,189} ] (3.25,6.25) rectangle (14,5.75);
+\draw [ line width=1.2pt ] (8.5,8.25) circle (2cm);
+\draw (10.5,8) to[short] (14.25,8);
+\draw (8.5,13.25) to[short] (8.5,10.25);
+\draw (2.75,12.5) to[short] (8.5,12.5);
+\draw [dashed] (4.75,10.25) -- (8.5,10.25);
+\draw [<->, >=Stealth] (5.75,12.5) -- (5.75,10.25)node[pos=0.5, fill=white]{1m };
+\draw [<->, >=Stealth] (5.75,10.25) -- (5.75,6.25)node[pos=0.5, fill=white]{2 m};
+\draw [<->, >=Stealth] (11.25,8) -- (11.25,6.25)node[pos=0.5, fill=white]{1 m};
+\node [font=\large] at (3.75,8.75) {Water};
+\node [font=\small] at (13,7) {Oil of sp gr 0.8};
+\node [font=\small] at (8.25,9.75) {R};
+\node [font=\small] at (10,8) {P};
+\node [font=\small] at (8.5,6.5) {Q};
+\end{circuitikz}

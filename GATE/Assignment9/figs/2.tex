@@ -1,0 +1,23 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (7,7.5) to[short] (7,7.5);
+\draw (9,7.25) to[short] (6,7.25);
+\draw [short] (6.5,7) -- (6.75,7.25);
+\draw [short] (7.5,7) -- (7.75,7.25);
+\node [font=\LARGE] at (5.5,8.25) {};
+\draw [short] (7,7) .. controls (7,7) and (7.25,7.25) .. (7.25,7.25);
+\draw [short] (6,7) -- (6.25,7.25);
+\draw [short] (8,7) -- (8.25,7.25);
+\draw [short] (8.5,7) -- (8.75,7.25);
+\draw (7,7.25) to[short] (7,8.5);
+\draw (7.25,7.25) to[short] (7.25,8.5);
+\draw (5.25,10.5) to[short] (5.25,8.5);
+\draw (8.25,9) to[short] (8.25,10);
+\draw [short] (5.25,8.5) .. controls (6.75,8.75) and (7.25,8.25) .. (8.25,9);
+\draw [short] (5.25,10.5) .. controls (7.25,10.75) and (7.25,10.5) .. (8.25,10);
+\draw [short] (7,8.5) .. controls (7.25,8.5) and (7,8.5) .. (7.25,8.5);
+\draw [->, >=Stealth] (3.25,9.5) -- (5.25,9.5)node[pos=0.5,below, fill=white]{Intake};
+\draw [->, >=Stealth] (8.25,9.5) -- (10.25,9.5)node[pos=0.6,below, fill=white]{Exhaust};
+\draw [->, >=Stealth] (9.25,7.75) -- (7.25,7.75)node[pos=0,right, fill=white]{Thrust stand};
+\end{circuitikz}
+

@@ -1,0 +1,32 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (3.5,5.5) -- (12.75,5.5);
+\draw [dashed] (4.75,5.5) -- (4.75,10.25);
+\draw [line width=1.1pt, short] (3.5,5.5) -- (4.75,5.5);
+\draw [line width=1.1pt, short] (4.75,5.5) -- (8,8.25);
+\draw [line width=1.1pt, short] (8,8.25) -- (12.5,8.25);
+\draw [dashed] (4.75,10) -- (4.75,11.25);
+\draw [dashed] (4.75,11.25) -- (10.5,8.25);
+\draw [short] (4.5,5.5) -- (4.5,5.75);
+\draw [short] (4.5,5.75) -- (4.75,5.75);
+\draw [short] (12.5,8.25) -- (13,8.25);
+\draw [short] (12.75,5.5) -- (13,5.5);
+\draw [<->, >=Stealth] (12.75,8.25) -- (12.75,5.5);
+\draw [short] (4.75,5.5) .. controls (7.75,5.75) and (9,7) .. (10.5,8.25);
+\draw [short] (4.75,10.5) .. controls (5,10.75) and (5.25,10.75) .. (5.25,11);
+\draw [short] (5.75,5.5) .. controls (5.75,6) and (5.75,6) .. (5.25,6);
+\draw [->, >=Stealth] (8.25,7.25) -- (8.25,6);
+\draw [short] (4.75,4.5) -- (4.75,5);
+\draw [short] (8,4.5) -- (8,5);
+\draw [<->, >=Stealth] (4.75,4.75) -- (8,4.75);
+\node [font=\normalsize] at (5.25,10.25) {$60^\circ$};
+\node [font=\normalsize] at (6,6) {$50^\circ$};
+\node [font=\normalsize] at (7.5,10.25) {25 m};
+\node [font=\normalsize] at (4.75,5.25) {K};
+\node [font=\normalsize] at (8,8.5) {N};
+\node [font=\normalsize] at (10.5,8.5) {M};
+\node [font=\normalsize] at (9.5,7) {L};
+\node [font=\normalsize] at (6,5) {10 m};
+\node [font=\normalsize] at (13.25,7) {15 m};
+\node [font=\normalsize] at (8.75,6) {W};
+\end{circuitikz}

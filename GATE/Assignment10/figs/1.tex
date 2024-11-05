@@ -1,0 +1,23 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (5.25,8.25) to[short] (5.25,8.25);
+\draw (4.75,10) to[short] (10,10);
+\draw (4.75,7.25) to[short] (10.25,7.25);
+\draw (4.75,6) to[short] (10.25,6);
+\draw [dashed] (4.75,9) -- (10,9);
+\draw [<->, >=Stealth] (7.25,7.25) -- (7.25,6);
+\draw [<->, >=Stealth] (7.25,10) -- (7.25,7.25);
+\node [font=\normalsize] at (8.5,10.5) {Ground level};
+\node [font=\normalsize] at (5.25,9.75) {Sand};
+\node [font=\normalsize] at (5.75,9.25) {$\gamma=17.5 kN/m^3$};
+\node [font=\normalsize] at (5.75,8.25) {$\gamma=18.5 kN/m^3$};
+\node [font=\normalsize] at (5.75,8.25) {$\gamma=18.5 kN/m^3$};
+\node [font=\normalsize] at (6,6.25) {$\gamma=17 kN/m^3$};
+\node [font=\normalsize] at (5.25,7) {$Clay$};
+\node [font=\normalsize] at (7.75,8.25) {$15 m$};
+\node [font=\normalsize] at (7.75,6.5) {$8 m$};
+\draw [<->, >=Stealth] (9,9) -- (9,10)node[pos=0.5,right, fill=white]{5 m};
+\draw (8.75,9.5) to (8.75,9.25) node[ground]{};
+\draw [->, >=Stealth] (8.75,9) -- (8.75,9.5);
+\end{circuitikz}
+
